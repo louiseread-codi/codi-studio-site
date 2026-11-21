@@ -6,7 +6,7 @@
 <title>codi studio | The AI partner for established businesses</title>
 <meta name="description" content="Practical AI consultancy for established businesses. codi studio helps you build an AI roadmap, implement automation and train your team.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
 <style>
 body{margin:0;background:#12032E;font-family:'Poppins',sans-serif;-webkit-font-smoothing:antialiased}
 a{color:#8DFFBE}
@@ -60,6 +60,27 @@ a:hover{color:#35FF9A}
 .site-header .primary-nav a{display:block;padding:12px 0;min-height:24px}
 .site-header .primary-nav .hv2{margin-top:8px;text-align:center}
 }
+/* AI insights section */
+.hv3:hover{background:rgba(228,204,255,0.08)!important}
+/* Blog image system (see README). Renders at any card width via container query units. */
+.blog-image{aspect-ratio:3/2;width:100%;box-sizing:border-box;border-radius:16px;overflow:hidden;position:relative;isolation:isolate;container-type:inline-size}
+.bi-wordmark{position:absolute;left:6cqw;top:5cqw;font-weight:700;font-size:3.2cqw;letter-spacing:-0.03em}
+.bi-number{position:absolute;left:6cqw;bottom:27%;font-size:30cqw;font-weight:800;letter-spacing:-0.07em;line-height:0.85}
+.bi-hook{position:absolute;left:6cqw;bottom:28%;font-size:11.5cqw;font-weight:800;letter-spacing:-0.05em;line-height:0.95}
+.bi-icon{position:absolute;left:26cqw;top:17%;width:36cqw;height:36cqw}
+.bi-dot{position:absolute;width:25cqw;height:25cqw;border-radius:50%;bottom:-10cqw}
+.bi-dot-1{right:1.7cqw}
+.bi-dot-2{right:-11.7cqw}
+.blog-card{background:#1E1034;border:1px solid rgba(228,204,255,0.16);border-radius:24px;padding:16px;display:flex;flex-direction:column;gap:22px}
+.blog-card-body{padding:0 12px 16px;display:flex;flex-direction:column;gap:14px;flex:1}
+.blog-meta{display:flex;align-items:center;gap:12px;font-size:14px;color:#CFC4E8}
+.blog-tag{font-weight:600;font-size:13px;padding:6px 12px;border-radius:999px}
+.blog-title{margin:0;font-size:24px;font-weight:700;letter-spacing:-0.02em;line-height:1.2;text-wrap:balance}
+.blog-title a{color:#FFFFFF;text-decoration:none}
+.blog-excerpt{margin:0;font-size:16px;line-height:1.6;color:#CFC4E8;text-wrap:pretty;flex:1}
+.blog-read{color:#8DFFBE;text-decoration:none;font-weight:600;font-size:16px}
+.blog-read:hover{color:#35FF9A}
+.blog-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:20px}
 </style>
 
 <!-- seo -->
@@ -92,6 +113,8 @@ a:hover{color:#35FF9A}
     <nav id="primary-navigation" class="primary-nav" aria-label="Main" style="display:flex;align-items:center;gap:28px;flex-wrap:wrap;font-size:15px;font-weight:500">
       <a data-m="navlink" href="/ai-partner-programme" style="color:#fff;text-decoration:none" class="hv1">AI Partner Programme</a>
       <a data-m="navlink" href="/speaking" style="color:#fff;text-decoration:none" class="hv1">Book an AI Speaker</a>
+      <a data-m="navlink" href="/about" style="color:#fff;text-decoration:none" class="hv1">About</a>
+      <a data-m="navlink" href="/resources" style="color:#fff;text-decoration:none" class="hv1">Resources</a>
       <a href="https://calendly.com/louise-read-codi-marketing/30min" target="_blank" rel="noopener" style="background:#35FF9A;color:#12032E;text-decoration:none;font-weight:600;padding:11px 22px;border-radius:999px" class="hv2">Book a call</a>
     </nav>
   </div>
@@ -262,6 +285,51 @@ a:hover{color:#35FF9A}
   </div>
 </section>
 
+<!-- AI INSIGHTS SECTION: paste into the homepage directly above the closing "Ready to put AI to work" section. -->
+<section aria-label="AI insights" style="background: #12032E; color: #FFFFFF; font-family: 'Poppins', sans-serif; border-top: 1px solid rgba(228,204,255,0.18)">
+<div style="max-width: 1200px; margin: 0 auto; padding: 96px 32px 120px; box-sizing: border-box; display: flex; flex-direction: column; gap: 48px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 720px; flex: 1 1 480px">
+<h2 style="margin: 0; font-size: clamp(32px, 4vw, 48px); font-weight: 700; letter-spacing: -0.03em; line-height: 1.08; text-wrap: balance">AI insights from <span style="color: #8DFFBE">codi studio</span></h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.65; text-wrap: pretty">Ideas, how-tos and honest takes for leaders who want AI to make a measurable difference to the business.</p>
+</div>
+<a href="/resources" class="hv3" style="flex: none; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 17px; padding: 15px 30px; border-radius: 999px; border: 1px solid rgba(228,204,255,0.35)">View resources</a>
+</div>
+<div class="blog-grid">
+<!-- CARDS:START -->
+<article class="blog-card" data-topic="Future of work">
+<div class="blog-image"><img src="/images/resources/why-i-set-up-codi-studio-for-the-ai-era.png" alt="" loading="lazy" style="display:block;width:100%;height:100%;object-fit:cover"></div>
+<div class="blog-card-body">
+<div class="blog-meta"><span class="blog-tag" style="background: #E4CCFF; color: #12032E">Future of work</span><span>20 Nov 2026</span></div>
+<h3 class="blog-title"><a href="/resources/why-i-set-up-codi-studio-for-the-ai-era">Why I set up Codi Studio for the AI era</a></h3>
+<p class="blog-excerpt">We asked our founder, Louise Read, why she set up Codi Studio, and what running a business on ten AI agents has taught her.</p>
+<a href="/resources/why-i-set-up-codi-studio-for-the-ai-era" class="blog-read" aria-label="Read Why I set up Codi Studio for the AI era">Read now →</a>
+</div>
+</article>
+<article class="blog-card" data-topic="AI how-to">
+<div class="blog-image"><img src="/images/resources/how-to-evaluate-where-your-business-is-with-ai.png" alt="" loading="lazy" style="display:block;width:100%;height:100%;object-fit:cover"></div>
+<div class="blog-card-body">
+<div class="blog-meta"><span class="blog-tag" style="background: #7CC4FF; color: #12032E">AI how-to</span><span>20 Nov 2026</span></div>
+<h3 class="blog-title"><a href="/resources/how-to-evaluate-where-your-business-is-with-ai">How to evaluate where your business is with AI</a></h3>
+<p class="blog-excerpt">The four levels we use to evaluate AI in a business, what each looks like, and how to tell where yours really sits.</p>
+<a href="/resources/how-to-evaluate-where-your-business-is-with-ai" class="blog-read" aria-label="Read How to evaluate where your business is with AI">Read now →</a>
+</div>
+</article>
+<article class="blog-card" data-topic="Strategy">
+<div class="blog-image"><img src="/images/resources/your-ai-is-a-very-expensive-training-pilot.png" alt="" loading="lazy" style="display:block;width:100%;height:100%;object-fit:cover"></div>
+<div class="blog-card-body">
+<div class="blog-meta"><span class="blog-tag" style="background: #8DFFBE; color: #12032E">Strategy</span><span>20 Nov 2026</span></div>
+<h3 class="blog-title"><a href="/resources/your-ai-is-a-very-expensive-training-pilot">Your AI is a very expensive training pilot</a></h3>
+<p class="blog-excerpt">Only 37% of companies report any profit impact from AI. Why AI has become a cost centre, and how to get it onto your P&amp;L in 2027.</p>
+<a href="/resources/your-ai-is-a-very-expensive-training-pilot" class="blog-read" aria-label="Read Your AI is a very expensive training pilot">Read now →</a>
+</div>
+</article>
+<!-- CARDS:END -->
+</div>
+</div>
+</section>
+<!-- /AI INSIGHTS SECTION -->
+
 <div data-screen-label="Close background" style="position:relative;overflow:hidden;isolation:isolate;background:#12032E">
   <div aria-hidden="true" style="position:absolute;inset:0;z-index:-2"><img src="/images/codi-studio-office-buildings.jpg" alt="" loading="lazy" style="display:block;width:100%;height:100%;object-fit:cover"></div>
   <div aria-hidden="true" style="position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at center,rgba(18,3,46,0.82) 0%,rgba(18,3,46,0.92) 60%,rgba(18,3,46,0.97) 100%),linear-gradient(180deg,#12032E 0%,rgba(18,3,46,0) 20%)"></div>
@@ -283,6 +351,8 @@ a:hover{color:#35FF9A}
       <nav style="display:flex;gap:28px;flex-wrap:wrap;font-size:15px;font-weight:500">
         <a href="/ai-partner-programme" style="color:#fff;text-decoration:none" class="hv1">AI Partner Programme</a>
         <a href="/speaking" style="color:#fff;text-decoration:none" class="hv1">Book an AI Speaker</a>
+        <a href="/about" style="color:#fff;text-decoration:none" class="hv1">About</a>
+        <a href="/resources" style="color:#fff;text-decoration:none" class="hv1">Resources</a>
       </nav>
       <nav aria-label="Legal" style="display:flex;gap:20px;flex-wrap:wrap;font-size:13px"><a href="/privacy-policy" style="color:#CFC4E8;text-decoration:none" class="hvlegal">Privacy Policy</a><a href="/terms-and-conditions" style="color:#CFC4E8;text-decoration:none" class="hvlegal">Terms &amp; Conditions</a></nav>
     </div>

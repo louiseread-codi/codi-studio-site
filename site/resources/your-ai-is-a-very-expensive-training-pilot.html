@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your AI is a very expensive training pilot. Here&#x27;s how to get it onto your P&amp;L | codi studio</title>
+<meta name="description" content="Why AI has become a cost centre for most businesses, why handing it to employees does not work, and five steps to get AI onto your P&amp;L in 2027.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#12032E;font-family:'Poppins',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#8DFFBE}
+a:hover{color:#35FF9A}
+@keyframes codiMarquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+@media (max-width:720px){
+.mobile-optional-image{display:none!important}
+[data-m="cluster"]{display:flex!important;flex-direction:column;gap:12px}
+[data-m="cluster"]>*{transform:none!important;align-self:stretch!important}
+[data-m="gallery"]{grid-template-columns:1fr 1fr!important;grid-template-rows:none!important;grid-auto-rows:200px}
+[data-m="gallery"]>*{grid-area:auto!important}
+[data-m="gallery"]>*:first-child{grid-column:1/-1!important;grid-row:span 2!important}
+[data-m="qfig"]{padding:56px 8px!important}
+[data-m="qmark"]{font-size:72px!important}
+[data-m="pad"]{padding:24px!important}
+}
+[hidden]{display:none!important}
+@media (max-width:720px){[data-m="cluster"]>*:not([data-mkeep]){display:none!important}}
+.hv1:hover{color:#8DFFBE!important}
+.hv2:hover{background:#8DFFBE!important;color:#12032E!important}
+.hvlegal:hover{color:#8DFFBE!important}
+.legal{max-width:820px;margin:0 auto;padding:88px 32px 120px;font-size:17px;line-height:1.7;color:#E9E3F7}
+.legal h1{margin:0 0 12px;font-size:clamp(38px,4.6vw,58px);font-weight:700;letter-spacing:-0.03em;line-height:1.06;color:#fff}
+.legal h2{margin:56px 0 16px;padding-top:40px;border-top:1px solid rgba(228,204,255,0.18);font-size:clamp(24px,2.6vw,30px);font-weight:700;letter-spacing:-0.02em;line-height:1.2;color:#fff;text-wrap:balance}
+.legal h3{margin:32px 0 10px;font-size:19px;font-weight:700;color:#8DFFBE}
+.legal p{margin:0 0 16px;text-wrap:pretty}
+.legal ul{margin:0 0 16px;padding-left:22px}
+.legal li{margin:0 0 8px}
+.legal li::marker{color:#35FF9A}
+.legal strong{color:#fff;font-weight:600}
+.legal .pp-date{color:#CFC4E8;font-size:15px;margin-bottom:32px}
+.legal .pp-purposes{display:flex;flex-direction:column;gap:16px;margin:24px 0}
+.legal .pp-purpose{background:#1E1034;border:1px solid rgba(228,204,255,0.16);border-radius:20px;padding:24px}
+.legal dl{margin:0}
+.legal dt{font-size:13px;font-weight:600;color:#CFC4E8;margin-top:12px}
+.legal dt:first-child{margin-top:0}
+.legal dd{margin:4px 0 0}
+@media (max-width:720px){.legal{padding:56px 20px 88px}.legal .pp-purpose{padding:20px}}
+
+.menu-toggle{display:none;align-items:center;justify-content:center;gap:10px;min-height:44px;padding:10px 16px;border:1px solid rgba(228,204,255,0.35);border-radius:999px;background:transparent;color:#fff;font:inherit;font-size:15px;font-weight:500;cursor:pointer}
+.menu-toggle svg{width:20px;height:20px;flex-shrink:0}
+.menu-toggle:hover{border-color:#8DFFBE;color:#8DFFBE}
+.site-header :focus-visible{outline:2px solid #8DFFBE;outline-offset:5px}
+@media (max-width:720px){
+.site-header>div{padding:14px 20px!important;gap:16px!important}
+.site-header.menu-ready .menu-toggle{display:inline-flex}
+.site-header .primary-nav{flex-basis:100%;align-items:stretch!important;flex-direction:column;gap:4px!important;padding-top:12px;border-top:1px solid rgba(228,204,255,0.18)}
+.site-header.menu-ready .primary-nav{display:none!important}
+.site-header.menu-open .primary-nav{display:flex!important}
+.site-header .primary-nav a{display:block;padding:12px 0;min-height:24px}
+.site-header .primary-nav .hv2{margin-top:8px;text-align:center}
+}
+/* page */
+.diff-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:20px}
+.diff-grid>*{flex:0 1 calc((100% - 40px) / 3);min-width:min(100%,300px);box-sizing:border-box}
+/* Blog image system (see README). Renders at any card width via container query units. */
+.blog-image{aspect-ratio:3/2;width:100%;box-sizing:border-box;border-radius:16px;overflow:hidden;position:relative;isolation:isolate;container-type:inline-size}
+.bi-wordmark{position:absolute;left:6cqw;top:5cqw;font-weight:700;font-size:3.2cqw;letter-spacing:-0.03em}
+.bi-number{position:absolute;left:6cqw;bottom:27%;font-size:30cqw;font-weight:800;letter-spacing:-0.07em;line-height:0.85}
+.bi-hook{position:absolute;left:6cqw;bottom:28%;font-size:11.5cqw;font-weight:800;letter-spacing:-0.05em;line-height:0.95}
+.bi-icon{position:absolute;left:26cqw;top:17%;width:36cqw;height:36cqw}
+.bi-dot{position:absolute;width:25cqw;height:25cqw;border-radius:50%;bottom:-10cqw}
+.bi-dot-1{right:1.7cqw}
+.bi-dot-2{right:-11.7cqw}
+.blog-card{background:#1E1034;border:1px solid rgba(228,204,255,0.16);border-radius:24px;padding:16px;display:flex;flex-direction:column;gap:22px}
+.blog-card-body{padding:0 12px 16px;display:flex;flex-direction:column;gap:14px;flex:1}
+.blog-meta{display:flex;align-items:center;gap:12px;font-size:14px;color:#CFC4E8}
+.blog-tag{font-weight:600;font-size:13px;padding:6px 12px;border-radius:999px}
+.blog-title{margin:0;font-size:24px;font-weight:700;letter-spacing:-0.02em;line-height:1.2;text-wrap:balance}
+.blog-title a{color:#FFFFFF;text-decoration:none}
+.blog-excerpt{margin:0;font-size:16px;line-height:1.6;color:#CFC4E8;text-wrap:pretty;flex:1}
+.blog-read{color:#8DFFBE;text-decoration:none;font-weight:600;font-size:16px}
+.blog-read:hover{color:#35FF9A}
+.blog-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:20px}
+.hvpill:hover{border-color:rgba(228,204,255,0.6)!important}
+.filter-btn{font-family:inherit;font-size:15px;font-weight:500;min-height:44px;padding:10px 20px;border-radius:999px;border:1px solid rgba(228,204,255,0.3);background:transparent;color:#FFFFFF;cursor:pointer}
+.filter-btn[aria-pressed="true"]{font-weight:600;border-color:#35FF9A;background:#35FF9A;color:#12032E}
+/* article */
+.article-wrap{max-width:760px;margin:0 auto;padding:0 32px;box-sizing:content-box}
+.prose{font-size:18px;line-height:1.75;color:#E9E2F7}
+.prose p{margin:0 0 22px}
+.prose h2{margin:56px 0 18px;font-size:clamp(26px,3vw,34px);font-weight:700;letter-spacing:-0.02em;line-height:1.2;color:#fff}
+.prose h3{margin:36px 0 12px;font-size:22px;font-weight:700;letter-spacing:-0.01em;line-height:1.3;color:#fff}
+.prose ul,.prose ol{margin:0 0 24px;padding-left:24px}
+.prose li{margin:0 0 10px;padding-left:4px}
+.prose li::marker{color:#8DFFBE}
+.prose strong{color:#fff;font-weight:600}
+.prose a{color:#8DFFBE;text-decoration:underline;text-underline-offset:3px}
+.prose a:hover{color:#35FF9A}
+.prose blockquote{margin:36px 0;padding:4px 0 4px 24px;border-left:3px solid #35FF9A;font-size:clamp(22px,2.6vw,28px);font-weight:600;line-height:1.35;letter-spacing:-0.01em;color:#fff}
+.prose blockquote p{margin:0}
+.prose .sources-h ~ ul{font-size:14px;line-height:1.6;color:#CFC4E8}
+.prose .sources-h{font-size:20px}
+.article-image{border-radius:20px;margin:0 0 48px}
+</style>
+
+<!-- seo -->
+<link rel="canonical" href="https://codistudio.ai/resources/your-ai-is-a-very-expensive-training-pilot">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#12032E">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="codi studio">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="Your AI is a very expensive training pilot. Here&#x27;s how to get it onto your P&amp;L | codi studio">
+<meta property="og:description" content="Why AI has become a cost centre for most businesses, why handing it to employees does not work, and five steps to get AI onto your P&amp;L in 2027.">
+<meta property="og:url" content="https://codistudio.ai/resources/your-ai-is-a-very-expensive-training-pilot">
+<meta property="og:image" content="https://codistudio.ai/images/resources/your-ai-is-a-very-expensive-training-pilot.png">
+<meta name="twitter:image" content="https://codistudio.ai/images/resources/your-ai-is-a-very-expensive-training-pilot.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Your AI is a very expensive training pilot. Here&#x27;s how to get it onto your P&amp;L | codi studio">
+<meta name="twitter:description" content="Why AI has become a cost centre for most businesses, why handing it to employees does not work, and five steps to get AI onto your P&amp;L in 2027.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "Your AI is a very expensive training pilot. Here's how to get it onto your P&L", "description": "Why AI has become a cost centre for most businesses, why handing it to employees does not work, and five steps to get AI onto your P&L in 2027.", "datePublished": "2026-11-20", "dateModified": "2026-11-20", "mainEntityOfPage": "https://codistudio.ai/resources/your-ai-is-a-very-expensive-training-pilot", "author": {"@type": "Person", "name": "Louise Read", "@id": "https://codistudio.ai/speaking#louise"}, "publisher": {"@id": "https://codistudio.ai/#org"}, "image": "https://codistudio.ai/images/resources/your-ai-is-a-very-expensive-training-pilot.png"}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why aren't businesses seeing a return on AI?", "acceptedAnswer": {"@type": "Answer", "text": "Most have given everyone licences and focused on time saved, so AI ends up automating low-value admin. Without redesigning how the business works, there's little impact on revenue or costs."}}, {"@type": "Question", "name": "How do you measure AI ROI?", "acceptedAnswer": {"@type": "Answer", "text": "Measure growth first (leads, pipeline, revenue, retention), then money saved (costs that have left the business), then time back. Take a baseline before each change and compare AI with the full cost of the work it replaces."}}, {"@type": "Question", "name": "Should we cap AI spend per employee?", "acceptedAnswer": {"@type": "Answer", "text": "A cap controls cost, but it doesn't create value. The bigger fix is deciding, from the top, where AI should be used and what it should achieve."}}, {"@type": "Question", "name": "Who is responsible for AI ROI?", "acceptedAnswer": {"@type": "Answer", "text": "The CEO and the C-suite. Moving AI from a cost to commercial output means redesigning how the business works, which only the leadership team can do."}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Resources", "item": "https://codistudio.ai/resources"}, {"@type": "ListItem", "position": 2, "name": "Your AI is a very expensive training pilot. Here's how to get it onto your P&L", "item": "https://codistudio.ai/resources/your-ai-is-a-very-expensive-training-pilot"}]}]}</script>
+<!-- /seo -->
+</head>
+<body>
+<div style="background:#12032E;color:#fff;font-family:'Poppins',sans-serif;min-height:100vh">
+
+<header class="site-header" style="position:sticky;top:0;z-index:10;background:rgba(18,3,46,0.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(228,204,255,0.12)">
+  <div style="max-width:1200px;margin:0 auto;padding:16px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap">
+    <a href="/" aria-label="codi studio home" style="display:inline-flex;align-items:baseline;font-weight:700;font-size:26px;line-height:1;letter-spacing:-0.03em;color:#fff;text-decoration:none">cod<span style="position:relative;display:inline-block">ı<span style="position:absolute;top:0.02em;left:calc(50% - 0.17em);width:0.21em;height:0.21em;border-radius:50%;background:#8B4BFF"></span><span style="position:absolute;top:0.02em;left:calc(50% - 0.05em);width:0.21em;height:0.21em;border-radius:50%;background:#35FF9A;mix-blend-mode:screen"></span></span><span style="margin-left:0.28em">studio</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+      <span data-menu-label>Menu</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+    <nav id="primary-navigation" class="primary-nav" aria-label="Main" style="display:flex;align-items:center;gap:28px;flex-wrap:wrap;font-size:15px;font-weight:500">
+      <a data-m="navlink" href="/ai-partner-programme" style="color:#fff;text-decoration:none" class="hv1">AI Partner Programme</a>
+      <a data-m="navlink" href="/speaking" style="color:#fff;text-decoration:none" class="hv1">Book an AI Speaker</a>
+      <a data-m="navlink" href="/about" style="color:#fff;text-decoration:none" class="hv1">About</a>
+      <a data-m="navlink" href="/resources" style="color:#8DFFBE;text-decoration:none" aria-current="page">Resources</a>
+      <a href="https://calendly.com/louise-read-codi-marketing/30min" target="_blank" rel="noopener" style="background:#35FF9A;color:#12032E;text-decoration:none;font-weight:600;padding:11px 22px;border-radius:999px" class="hv2">Book a call</a>
+    </nav>
+  </div>
+</header>
+
+<div style="padding:72px 0 40px">
+<div class="article-wrap" style="display:flex;flex-direction:column;gap:22px">
+<a href="/resources" class="hv1" style="color:#CFC4E8;text-decoration:none;font-size:15px;font-weight:500">← All resources</a>
+<div class="blog-meta"><span class="blog-tag" style="background: #8DFFBE; color: #12032E">Strategy</span><span>20 Nov 2026</span></div>
+<h1 style="margin:0;font-size:clamp(34px,4.4vw,52px);font-weight:700;letter-spacing:-0.03em;line-height:1.08;text-wrap:balance">Your AI is a very expensive training pilot. Here&#x27;s how to get it onto your P&amp;L</h1>
+<p style="margin:0;font-size:15px;color:#CFC4E8">By Louise Read, founder, Codi Studio</p>
+</div>
+</div>
+<main>
+<article class="article-wrap" style="padding-bottom:96px">
+<div class="blog-image article-image"><img src="/images/resources/your-ai-is-a-very-expensive-training-pilot.png" alt="" loading="lazy" style="display:block;width:100%;height:100%;object-fit:cover"></div>
+<div class="prose">
+<p>McKinsey&#x27;s State of AI 2026 found that only 37% of companies report any profit impact from AI. At the same time, BCG found AI spend has nearly doubled, from 1.7% to 3.3% of revenue.</p>
+<p>Ask a leadership team whether they use AI and the answer is almost always the same: &quot;We use AI everywhere.&quot; Dig beneath the surface and it&#x27;s often a bit of a buzzword. Sometimes it&#x27;s for credibility with the board, sometimes for investors, sometimes for the market.</p>
+<p>In this article, we&#x27;ll explore why AI has become a cost centre, why handing it to employees doesn&#x27;t work, and what business leaders need to do in 2027 to get AI onto the P&amp;L: led by the CEO, and measured on growth first, money saved second and time back last.</p>
+<h2 id="2026-was-the-year-of-adopting-ai">2026 was the year of adopting AI</h2>
+<p>Most of the focus this year has been on getting people in organisations using AI. Businesses have bought licences and put budget towards upskilling the workforce: training sessions, courses, and training stipends to do the latest AI course. They&#x27;ve taught people how to use AI, but they haven&#x27;t thought about how to redesign their business with AI. That&#x27;s self-limiting.</p>
+<p>When I work with organisations and start speaking across different departments in those early conversations, this is what I see:</p>
+<ul><li><strong>Disparity in AI literacy and usage.</strong> Some people are steaming ahead, automating everything and doing all sorts of builds. Others are struggling to keep up.</li><li><strong>Duplicate builds.</strong> Different teams build the same thing, so the business pays for it twice.</li><li><strong>Low-value automations,</strong> like drafting an email or doing some reporting. Which is all well and good.</li><li><strong>Rising costs,</strong> because token usage keeps going up.</li></ul>
+<p>What I&#x27;m not seeing is any direct impact on the P&amp;L. At the moment, AI is a huge cost centre for organisations. The shift we need to make in 2027 is working out how AI can drive value and growth for the business.</p>
+<h2 id="companies-are-already-pulling-back">Companies are already pulling back</h2>
+<p>We&#x27;re starting to see businesses that rolled out licences pull back on spend and put limits on how much each employee can use.</p>
+<p>Accenture is a good example. In October 2026 it capped centrally funded Claude spend at $29 per employee per month, after some staff spent $500 to $1,000.</p>
+<p>What I suspect happened, based on the conversations I have with enterprise businesses, is that people were experimenting and building with AI all through 2026. Costs shot up as they experimented and automated all sorts of things. But it isn&#x27;t touching the bottom line. That&#x27;s because businesses haven&#x27;t stopped to decide what their AI priorities should be, where AI should be used in the business, and what the future of their business looks like with AI.</p>
+<h2 id="why-handing-it-to-employees-doesn-t-work">Why handing it to employees doesn&#x27;t work</h2>
+<p>When you give everyone a licence and expect them to figure it out, you miss a huge step. People improve their own tasks. They don&#x27;t redesign the business, and things get done with AI that executives aren&#x27;t aware of, don&#x27;t know about, or wouldn&#x27;t be comfortable with.</p>
+<p>As you give people freedom with AI, you also start to lose control of where it&#x27;s being deployed across your organisation. That brings four risks:</p>
+<ul><li><strong>Data protection.</strong> Company and customer data can end up in AI accounts and apps that nobody has checked or approved.</li><li><strong>Governance and auditing.</strong> If no one knows what&#x27;s been built, what it&#x27;s connected to or who signed it off, no one can check what it&#x27;s doing or show an auditor.</li><li><strong>Customer experience.</strong> If AI isn&#x27;t managed centrally by the CEO and the C-suite, you don&#x27;t know what your customers are actually getting.</li><li><strong>Your brand.</strong> What one person thinks is good enough for the brand is subjective, and another employee will see it differently.</li></ul>
+<p>A simple example: someone in sales might think a deck is on brand, but it isn&#x27;t what marketing requires or what has officially been signed off. That&#x27;s a small example, but at scale it can do real damage to the brand.</p>
+<p>Deciding where AI will add commercial value, for the business, your employees and your customers, has to be directed from the top. Moving AI from a cost to commercial output is the responsibility of the CEO and the C-suite.</p>
+<p>In 2027, businesses need to start getting AI onto their P&amp;L and driving revenue.</p>
+<h2 id="how-to-get-ai-onto-the-p-l">How to get AI onto the P&amp;L</h2>
+<h3 id="1-redesign-the-whole-business-not-isolated-tasks">1. Redesign the whole business, not isolated tasks</h3>
+<p>Thinking about AI as a tool is fundamentally wrong. &quot;An agent that gets me more leads&quot; or &quot;more content for the blog&quot; are isolated, limited views of what AI can do. The businesses that are winning redesign their entire business for the AI era, with agents, automations and processes working across it.</p>
+<p>We&#x27;ve been here before. Electricity came into factories in the 1880s, but there weren&#x27;t any meaningful productivity gains until the 1920s. Factory owners made like-for-like replacements: they swapped the steam engine for an electric generator and left the old system running.</p>
+<p>The big shift only came when factories completely reorganised themselves. Each machine got its own electric motor, and the factory layout was redesigned around the new energy. After three decades of growing at less than 1% a year, productivity in US manufacturing grew at more than 5% a year between 1919 and 1929. It took 40 years to get there.</p>
+<p>History tells us we need to think through how to redesign the business around new innovations, and in this case, that&#x27;s AI. Simply using AI to speed up a process is very limiting. That&#x27;s the one thing I want businesses to think about over the next year, especially as AI gets cheaper to use.</p>
+<h3 id="2-point-ai-at-what-already-drives-revenue">2. Point AI at what already drives revenue</h3>
+<p>Map the business and find where the money really comes from. Then use AI to scale that. If AI is pointed at growth, the business invests in it properly.</p>
+<h3 id="3-measure-growth-first-money-saved-second-time-back-last">3. Measure growth first, money saved second, time back last</h3>
+<p>Time saved is the easiest thing to count and the least useful. What you should be measuring is:</p>
+<ul><li><strong>Growth:</strong> more leads, pipeline, revenue, or customers kept.</li><li><strong>Money saved:</strong> a cost that has left the business, like a freelancer, an agency, or a hire you didn&#x27;t need to make.</li><li><strong>Time back:</strong> this only counts when you can say where it went.</li></ul>
+<h3 id="4-benchmark-ai-against-the-full-cost-of-the-work">4. Benchmark AI against the full cost of the work</h3>
+<p>Compare AI with the full cost of a person doing the same work, including overheads, training, tax and management, and never just with the licence fee. In the UK, someone on £35,000 really costs about £40,400 once employer National Insurance and pension are added, before training, management time and sick pay.</p>
+<h3 id="5-take-a-baseline-first">5. Take a baseline first</h3>
+<p>Measure before you build, so the comparison is honest.</p>
+<h2 id="the-question-to-ask-this-week">The question to ask this week</h2>
+<p>If your AI spend is growing and you can&#x27;t point to more revenue, a cost that has left the business, or time that has gone into growth, AI is a cost centre in your business. Put another way, it&#x27;s a very expensive training pilot.</p>
+<p>If that sounds familiar, <a href="https://calendly.com/louise-read-codi-marketing/30min" target="_blank" rel="noopener">book a 30-minute call</a> and we&#x27;ll look at where AI could earn its place on your P&amp;L.</p>
+<h2 id="faqs">FAQs</h2>
+<h3 id="why-aren-t-businesses-seeing-a-return-on-ai">Why aren&#x27;t businesses seeing a return on AI?</h3>
+<p>Most have given everyone licences and focused on time saved, so AI ends up automating low-value admin. Without redesigning how the business works, there&#x27;s little impact on revenue or costs.</p>
+<h3 id="how-do-you-measure-ai-roi">How do you measure AI ROI?</h3>
+<p>Measure growth first (leads, pipeline, revenue, retention), then money saved (costs that have left the business), then time back. Take a baseline before each change and compare AI with the full cost of the work it replaces.</p>
+<h3 id="should-we-cap-ai-spend-per-employee">Should we cap AI spend per employee?</h3>
+<p>A cap controls cost, but it doesn&#x27;t create value. The bigger fix is deciding, from the top, where AI should be used and what it should achieve.</p>
+<h3 id="who-is-responsible-for-ai-roi">Who is responsible for AI ROI?</h3>
+<p>The CEO and the C-suite. Moving AI from a cost to commercial output means redesigning how the business works, which only the leadership team can do.</p>
+<h2 id="sources" class="sources-h">Sources</h2>
+<ul><li>McKinsey, The State of AI in 2026.</li><li>BCG, Applied AI Index, 30 September 2026.</li><li>Accenture Claude spend cap: 404 Media, 15 October 2026; TechRadar.</li><li>GOV.UK employer National Insurance and pension rates, 2026/27.</li><li>Electricity in factories: Paul A. David and Gavin Wright, General Purpose Technologies and Surges in Productivity, University of Oxford Discussion Papers in Economic and Social History, No. 31, 1999; Warren D. Devine Jr., From Shafts to Wires, Journal of Economic History, 1983.</li></ul>
+</div>
+</article>
+</main>
+<section style="border-top: 1px solid rgba(228,204,255,0.18); position: relative; overflow: hidden; isolation: isolate; background: #12032E">
+<div aria-hidden="true" style="position: absolute; inset: 0; z-index: -2"><img src="/images/codi-studio-office-buildings.jpg" alt="" style="display: block; width: 100%; height: 100%; object-fit: cover"></div>
+<div aria-hidden="true" style="position: absolute; inset: 0; z-index: -1; background: linear-gradient(0deg, rgba(18,3,46,0.95) 0%, rgba(18,3,46,0.82) 50%, rgba(18,3,46,0.95) 100%)"></div>
+<div style="max-width: 1200px; margin: 0 auto; padding: 120px 32px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 24px">
+<h2 style="margin: 0; font-size: clamp(36px, 5vw, 64px); font-weight: 700; letter-spacing: -0.03em; line-height: 1.05; max-width: 900px; text-wrap: balance">Know you need AI in your business, <span style="color: #8DFFBE">but not sure where to start?</span></h2>
+<a href="https://calendly.com/louise-read-codi-marketing/30min" target="_blank" rel="noopener" class="hv2" style="background: #35FF9A; color: #12032E; text-decoration: none; font-weight: 600; font-size: 17px; padding: 16px 30px; border-radius: 999px; margin-top: 8px">Book a call</a>
+</div>
+</section>
+
+<footer style="border-top:1px solid rgba(228,204,255,0.12)">
+  <div style="max-width:1200px;margin:0 auto;padding:48px 32px;display:flex;justify-content:space-between;align-items:flex-start;gap:32px;flex-wrap:wrap">
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <a href="/" aria-label="codi studio home" style="display:inline-flex;align-items:baseline;font-weight:700;font-size:26px;line-height:1;letter-spacing:-0.03em;color:#fff;text-decoration:none">cod<span style="position:relative;display:inline-block">ı<span style="position:absolute;top:0.02em;left:calc(50% - 0.17em);width:0.21em;height:0.21em;border-radius:50%;background:#8B4BFF"></span><span style="position:absolute;top:0.02em;left:calc(50% - 0.05em);width:0.21em;height:0.21em;border-radius:50%;background:#35FF9A;mix-blend-mode:screen"></span></span><span style="margin-left:0.28em">studio</span></a>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:16px;align-items:flex-end">
+      <nav style="display:flex;gap:28px;flex-wrap:wrap;font-size:15px;font-weight:500">
+        <a href="/ai-partner-programme" style="color:#fff;text-decoration:none" class="hv1">AI Partner Programme</a>
+        <a href="/speaking" style="color:#fff;text-decoration:none" class="hv1">Book an AI Speaker</a>
+        <a href="/about" style="color:#fff;text-decoration:none" class="hv1">About</a>
+        <a href="/resources" style="color:#8DFFBE;text-decoration:none" aria-current="page">Resources</a>
+      </nav>
+      <nav aria-label="Legal" style="display:flex;gap:20px;flex-wrap:wrap;font-size:13px"><a href="/privacy-policy" style="color:#CFC4E8;text-decoration:none" class="hvlegal">Privacy Policy</a><a href="/terms-and-conditions" style="color:#CFC4E8;text-decoration:none" class="hvlegal">Terms &amp; Conditions</a></nav>
+    </div>
+  </div>
+</footer>
+</div>
+<script>
+(function(){
+  var header = document.querySelector('.site-header');
+  var toggle = header.querySelector('.menu-toggle');
+  var navigation = header.querySelector('.primary-nav');
+  var mobile = window.matchMedia('(max-width:720px)');
+  function setOpen(open){
+    header.classList.toggle('menu-open', open);
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.querySelector('[data-menu-label]').textContent = open ? 'Close' : 'Menu';
+    toggle.querySelector('path').setAttribute('d', open ? 'M6 6l12 12M6 18L18 6' : 'M4 6h16M4 12h16M4 18h16');
+  }
+  header.classList.add('menu-ready');
+  toggle.addEventListener('click', function(){setOpen(toggle.getAttribute('aria-expanded') !== 'true');});
+  header.addEventListener('keydown', function(event){
+    if(event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true'){
+      setOpen(false);
+      toggle.focus();
+    }
+  });
+  navigation.addEventListener('click', function(event){if(event.target.closest('a')) setOpen(false);});
+  mobile.addEventListener('change', function(){
+    var focusInNavigation = navigation.contains(document.activeElement);
+    var focusOnToggle = document.activeElement === toggle;
+    setOpen(false);
+    if(mobile.matches && focusInNavigation) toggle.focus();
+    if(!mobile.matches && focusOnToggle) navigation.querySelector('a').focus();
+  });
+})();
+
+document.querySelectorAll('.filter-btn').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var topic = btn.getAttribute('data-filter');
+    document.querySelectorAll('.filter-btn').forEach(function (b) {
+      var on = b === btn;
+      b.setAttribute('aria-pressed', on ? 'true' : 'false');
+      b.classList.toggle('hvpill', !on);
+    });
+    document.querySelectorAll('#articles .blog-card').forEach(function (card) {
+      card.hidden = topic !== 'All' && card.getAttribute('data-topic') !== topic;
+    });
+  });
+});
+
+</script>
+</body>
+</html>

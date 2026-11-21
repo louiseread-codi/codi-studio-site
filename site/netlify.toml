@@ -4,3 +4,14 @@ from = "https://codistudio.co.uk/*"
 to = "https://codistudio.ai/:splat"
 status = 301
 force = true
+
+[[redirects]]
+from = "/resources"
+to = "/resources.html"
+status = 200
+force = true
+
+[[redirects]]
+from = "/resources/:slug"
+to = "/resources/:slug.html"
+status = 200
