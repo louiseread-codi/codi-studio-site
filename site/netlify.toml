@@ -1,0 +1,6 @@
+# codi studio site. Netlify serves /about from about.html etc. automatically.
+[[redirects]]
+from = "https://codistudio.co.uk/*"
+to = "https://codistudio.ai/:splat"
+status = 301
+force = true
