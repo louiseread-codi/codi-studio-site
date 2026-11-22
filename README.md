@@ -12,7 +12,8 @@ Only articles that exist as .md files appear on the site. `draft: true` keeps on
 ## Front matter
 - `title`, `slug`, `topic` (Strategy, Implementation, AI how-to, Future of work), `date` (YYYY-MM-DD), `excerpt` are required.
 - `card_title` (shorter title for cards), `description` (meta description), `author`, `order` (tie-break on the same date) are optional.
-- Image: `image_file: /images/resources/<file>` uses a real image. Otherwise the generated brand graphic uses `image_kind` (number, hook or icon), `image_background` (solid or indigo), `image_big`, `image_line1`, `image_line2`, `image_icon` (target, checklist, layers, trend). Never put the article title on the image.
+- Image rules (Louise, 22 Nov 2026): only a word image (`image_kind: hook`, two lines) or an icon image (`image_kind: icon`). No number images. Alternate word, icon, word by publish order.
+- Image: `image_file: /images/resources/<file>` uses a real image. Otherwise the generated brand graphic uses `image_kind` (hook or icon), `image_background` (solid or indigo), `image_big`, `image_line1`, `image_line2`, `image_icon` (target, checklist, layers, trend). Never put the article title on the image.
 
 ## Rules
 - Edit only through this repo. No drag-and-drop deploys or Netlify AI edits once Git is linked.
