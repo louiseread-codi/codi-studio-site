@@ -302,6 +302,13 @@ def main():
     os.makedirs(out_dir, exist_ok=True)
     live = set()
     for a in arts:
+        if not a.get('image_file'):
+            # every article gets a real PNG: card, article header and LinkedIn preview
+            png = os.path.join(SITE, 'images', 'resources', a['slug'] + '.png')
+            if not os.path.exists(png):
+                import render_image
+                render_image.render(a, png)
+            a['image_file'] = f'/images/resources/{a["slug"]}.png'
         open(os.path.join(out_dir, a['slug'] + '.html'), 'w', encoding='utf-8').write(article_page(a, template))
         live.add(a['slug'] + '.html')
     for f in os.listdir(out_dir):  # remove pages whose article was deleted or set to draft
