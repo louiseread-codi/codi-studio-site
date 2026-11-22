@@ -11,7 +11,11 @@ import os, re, subprocess, sys, tempfile
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import build_resources as br
 
-CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
+import shutil
+CHROME = os.environ.get('CHROME') or next((c for c in [
+    '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
+    shutil.which('google-chrome'), shutil.which('google-chrome-stable'),
+    shutil.which('chromium'), shutil.which('chromium-browser')] if c and os.path.exists(c)), None)
 
 
 def main():
@@ -31,6 +35,8 @@ def main():
 {css}
 .blog-image{{border-radius:0!important;width:1200px;border:0!important}}</style></head>
 <body>{br.blog_image(a)}</body></html>'''
+    if not CHROME:
+        sys.exit('No Chrome/Chromium found. Set CHROME=/path/to/chrome, or leave image_file empty so the site draws the graphic.')
     with tempfile.NamedTemporaryFile('w', suffix='.html', delete=False, encoding='utf-8') as f:
         f.write(page)
     os.makedirs(os.path.dirname(out), exist_ok=True)
