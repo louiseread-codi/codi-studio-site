@@ -245,11 +245,15 @@ def article_page(a, template):
     graph = [{
         '@type': 'Article', 'headline': title, 'description': desc, 'datePublished': a['date'],
         'dateModified': a.get('updated', a['date']), 'mainEntityOfPage': url,
-        'author': ({'@type': 'Organization', 'name': 'codi studio', '@id': f'{BASE}/#org'} if author.lower().startswith('codi')
+        'author': ({'@type': 'Organization', 'name': 'Codi Studio', '@id': f'{BASE}/#org'} if author.lower().startswith('codi')
                    else {'@type': 'Person', 'name': 'Louise Read', '@id': f'{BASE}/speaking#louise'}),
         'publisher': {'@id': f'{BASE}/#org'},
         'image': share_img,
     }]
+    # Publisher: the full Codi Studio entity, so Google ties every article to the brand
+    graph.append({'@type': 'ProfessionalService', '@id': f'{BASE}/#org', 'name': 'Codi Studio',
+                  'alternateName': ['codi studio', 'Codi Studio AI', 'codistudio.ai'], 'url': f'{BASE}/',
+                  'logo': {'@type': 'ImageObject', 'url': f'{BASE}/apple-touch-icon.png', 'width': 180, 'height': 180}})
     if faqs:
         graph.append({'@type': 'FAQPage', 'mainEntity': [
             {'@type': 'Question', 'name': q, 'acceptedAnswer': {'@type': 'Answer', 'text': ans}} for q, ans in faqs]})
