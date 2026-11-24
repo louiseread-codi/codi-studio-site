@@ -5,7 +5,7 @@ topic: Strategy
 date: 2026-11-20
 order: 3
 card_title: Your AI is a very expensive training pilot
-author: Louise Read, founder, Codi Studio
+author: Louise Read, founder, codi studio
 excerpt: Only 37% of companies report any profit impact from AI. Why AI has become a cost centre, and how to get it onto your P&L in 2027.
 description: Why AI has become a cost centre for most businesses, why handing it to employees does not work, and five steps to get AI onto your P&L in 2027.
 image_file: /images/resources/your-ai-is-a-very-expensive-training-pilot.png

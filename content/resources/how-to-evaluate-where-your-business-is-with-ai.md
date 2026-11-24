@@ -1,13 +1,13 @@
 ---
-title: How to evaluate where your business is with AI: the Codi Studio AI evaluation guide
+title: How to evaluate where your business is with AI: the codi studio AI evaluation guide
 slug: how-to-evaluate-where-your-business-is-with-ai
 topic: AI how-to
 date: 2026-11-20
 order: 2
 card_title: How to evaluate where your business is with AI
-author: Louise Read, founder, Codi Studio
+author: Louise Read, founder, codi studio
 excerpt: The four levels we use to evaluate AI in a business, what each looks like, and how to tell where yours really sits.
-description: The Codi Studio AI evaluation guide: four levels of AI in business, what each looks like, how to advance, and where to aim by the end of 2027.
+description: The codi studio AI evaluation guide: four levels of AI in business, what each looks like, how to advance, and where to aim by the end of 2027.
 image_file: /images/resources/how-to-evaluate-where-your-business-is-with-ai.png
 image_kind: hook
 image_background: solid
@@ -16,7 +16,7 @@ image_line2: to level 4.
 ---
 
 A lot of businesses don't really know where they are with AI yet. They think they're using it. But how do you evaluate where you are on your AI growth journey, and what it would take to go further?  
-At Codi Studio, we use four levels to work that out. They're our own way of evaluating AI in a business:
+At codi studio, we use four levels to work that out. They're our own way of evaluating AI in a business:
 
 * **Level 1, the assistant:** people ask AI questions and it responds.  
 * **Level 2, automation:** systems are connected, AI has context, and routine tasks are set up.  
@@ -136,13 +136,13 @@ Ask yourself, and then ask your team:
 
 There's a huge opportunity in 2027 to make AI a growth lever for your business. It starts with mapping out your entire business and identifying the areas to automate, while holding back on what makes you unique.  
 Done well, AI can accelerate profit margins and commercial growth while reducing costs. That comes from moving through these levels, and especially from reaching level 4: redesigning your organisation around AI, for the AI era.  
-At Codi Studio, we start by mapping the business. If you'd like to find out where your business really sits and what to do next, [book a 30-minute call](https://calendly.com/louise-read-codi-marketing/30min).
+At codi studio, we start by mapping the business. If you'd like to find out where your business really sits and what to do next, [book a 30-minute call](https://calendly.com/louise-read-codi-marketing/30min).
 
 ## **FAQs**
 
 ### **How do you evaluate AI in a business?**
 
-Look at what's in place rather than how much people use AI. At Codi Studio, we use four levels: the assistant (people ask AI questions), automation (connected systems, context files and triggered tasks), agents (AI working towards a goal it can measure) and the orchestrated business (multiple agents working together towards department goals, with a person approving the work).
+Look at what's in place rather than how much people use AI. At codi studio, we use four levels: the assistant (people ask AI questions), automation (connected systems, context files and triggered tasks), agents (AI working towards a goal it can measure) and the orchestrated business (multiple agents working together towards department goals, with a person approving the work).
 
 ### **What's the difference between AI automation and an AI agent?**
 
