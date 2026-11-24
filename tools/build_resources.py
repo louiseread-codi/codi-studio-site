@@ -18,7 +18,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = os.path.join(ROOT, 'site')
 CONTENT = os.path.join(ROOT, 'content', 'resources')
 BASE = 'https://codistudio.ai'
-SAME_AS = ['https://www.youtube.com/channel/UCgojBGcJphn3vuFl9xBCvhg']  # Codi Studio's own profiles
+SAME_AS = ['https://www.linkedin.com/company/codi-studio', 'https://www.youtube.com/channel/UCgojBGcJphn3vuFl9xBCvhg']  # Codi Studio's own profiles
 CALENDLY = 'https://calendly.com/louise-read-codi-marketing/30min'
 
 TOPICS = {  # topic: (colour, tag text colour)
@@ -330,21 +330,17 @@ def main():
             f'<button type="button" class="filter-btn hvpill" data-filter="{esc(t)}" aria-pressed="false">{esc(t)}</button>' for t in used]
         filters = '<div role="group" aria-label="Filter articles by topic" style="display: flex; flex-wrap: wrap; gap: 12px">\n' + '\n'.join(btns) + '\n</div>'
     s = replace_between(s, '<!-- FILTERS:START -->', '<!-- FILTERS:END -->', filters)
-    # hub schema: sits after <!-- /seo --> so article pages don't inherit it
+    # hub article list: sits after <!-- /seo --> so article pages don't inherit it (brand node is already in the page)
     hub = {'@context': 'https://schema.org', '@graph': [
         {'@type': 'CollectionPage', '@id': f'{BASE}/resources#page', 'url': f'{BASE}/resources', 'name': 'Resources',
          'description': re.search(r'<meta name="description" content="(.*?)">', s).group(1),
          'isPartOf': {'@id': f'{BASE}/#website'}, 'publisher': {'@id': f'{BASE}/#org'},
          'mainEntity': {'@type': 'ItemList', 'itemListElement': [
              {'@type': 'ListItem', 'position': i + 1, 'url': f'{BASE}/resources/{a["slug"]}', 'name': a['title']}
-             for i, a in enumerate(arts)]}},
-        {'@type': 'ProfessionalService', '@id': f'{BASE}/#org', 'name': 'Codi Studio',
-         'alternateName': ['codi studio', 'Codi Studio AI', 'codistudio.ai'], 'url': f'{BASE}/',
-         'logo': {'@type': 'ImageObject', 'url': f'{BASE}/apple-touch-icon.png', 'width': 180, 'height': 180},
-         'sameAs': SAME_AS}]}
+             for i, a in enumerate(arts)]}}]}
     hub_ld = '<script type="application/ld+json">' + json.dumps(hub, ensure_ascii=False) + '</script>'
     if '<!-- HUB-LD:START -->' not in s:
-        s = s.replace('<!-- /seo -->\n</head>', '<!-- /seo -->\n<!-- HUB-LD:START -->\n<!-- HUB-LD:END -->\n</head>', 1)
+        s = s.replace('</head>', '<!-- HUB-LD:START -->\n<!-- HUB-LD:END -->\n</head>', 1)
     s = replace_between(s, '<!-- HUB-LD:START -->', '<!-- HUB-LD:END -->', hub_ld)
     open(res_path, 'w', encoding='utf-8').write(s)
 

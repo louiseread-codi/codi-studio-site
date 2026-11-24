@@ -1,12 +1,12 @@
 ---
-title: Why I set up Codi Studio for the AI era
+title: Why I set up codi studio for the AI era
 slug: why-i-set-up-codi-studio-for-the-ai-era
 topic: Future of work
 date: 2026-11-20
 order: 1
-author: Codi Studio
-excerpt: We asked our founder, Louise Read, why she set up Codi Studio, and what running a business on ten AI agents has taught her.
-description: Why Louise Read set up Codi Studio: what she saw inside businesses spending on AI, and what running a business on ten AI agents taught her.
+author: codi studio
+excerpt: We asked our founder, Louise Read, why she set up codi studio, and what running a business on ten AI agents has taught her.
+description: Why Louise Read set up codi studio: what she saw inside businesses spending on AI, and what running a business on ten AI agents taught her.
 image_file: /images/resources/why-i-set-up-codi-studio-for-the-ai-era.png
 image_kind: hook
 image_background: solid
@@ -14,11 +14,11 @@ image_line1: Ten agents.
 image_line2: One founder.
 ---
 
-We sat down with our founder, Louise Read, to ask why she set up Codi Studio. Louise spent 16 years as a technology marketing leader at companies including Experian, Brightpearl and Klaviyo, and the last five taking AI products to market. Before Codi Studio, she set up and ran a marketing agency with a team of ten. Today she carries a similar level of work with a team of ten AI agents behind her.
+We sat down with our founder, Louise Read, to ask why she set up codi studio. Louise spent 16 years as a technology marketing leader at companies including Experian, Brightpearl and Klaviyo, and the last five taking AI products to market. Before codi studio, she set up and ran a marketing agency with a team of ten. Today she carries a similar level of work with a team of ten AI agents behind her.
 
 Here's the conversation, in her words.
 
-## **What made you set up Codi Studio?**
+## **What made you set up codi studio?**
 
 I was going into lots of businesses, and before I started working with them, what I'd often hear is that they were using AI everywhere. The reality was very different.
 
@@ -26,7 +26,7 @@ Yes, they'd given licences to all their team members. Some were even providing t
 
 The other thing that was really noticeable, when I worked across multiple departments, was duplicate builds. Businesses were paying twice for things they'd created. I just felt there was a better way of doing this.
 
-## **Before Codi Studio, you ran an agency with a team of ten. What was that like?**
+## **Before codi studio, you ran an agency with a team of ten. What was that like?**
 
 I was spending £30,000 to £40,000 a year on employment costs. National Insurance was increasing, and so were employer obligations. I had an office, and I encouraged the team to come in, so I ended up paying for travel stipends, lunches and team socials. Then there's maternity leave and paid sick leave. All of that adds a huge amount of cost and risk.
 
@@ -40,7 +40,7 @@ What I've been able to do with AI is reduce that risk, reduce the cost, and at t
 
 It's also less likely to make mistakes, and it's continually learning, so it gets better and better the more time I invest in it. It has changed my entire business, and my life.
 
-Today, Codi Studio runs on a team of ten AI agents, from a chief of staff that writes my daily brief to client managers for each account. We hit our business goals within three months.
+Today, codi studio runs on a team of ten AI agents, from a chief of staff that writes my daily brief to client managers for each account. We hit our business goals within three months.
 
 ## **What surprised you most?**
 
@@ -68,7 +68,7 @@ When people just get licences, it becomes incredibly costly for a business. You'
 
 This has to be directed from the C-suite. If you just hand AI over to employees and expect them to figure it out, you're missing a huge step.
 
-## **What's your vision for Codi Studio?**
+## **What's your vision for codi studio?**
 
 ***"Every business run by people and AI together, and more profitable for it."***
 
@@ -78,13 +78,13 @@ You still need people to point AI at the work. AI can do a lot of these tasks, b
 
 In 2026, a lot of people have just realised how powerful AI is, and the result has been a lot more output instead of revenue. More isn't always the goal.
 
-## **Who is Codi Studio for?**
+## **Who is codi studio for?**
 
 I think it's amazing for everybody. There's a huge opportunity for businesses to reduce their costs and grow with AI, regardless of size. And even at an individual level, there's a huge amount it can help with.
 
 Every other business also has access to it, though. So you really have to design it into your business, and keep what makes you unique.
 
-## **What do you want Codi Studio to be known for in five years?**
+## **What do you want codi studio to be known for in five years?**
 
 Helping businesses bring AI into their business, so it reduces their costs and increases their profit margins, and AI just becomes part of how they work. It's not this scary, unknown thing. They have agents in their business, they have the right governance in place, and they're seeing revenue and returns from AI.
 
@@ -94,21 +94,21 @@ If your business is spending on AI and you can't yet see it on the P\&L, [book a
 
 ## **FAQs**
 
-### **Who founded Codi Studio?**
+### **Who founded codi studio?**
 
-Louise Read founded Codi Studio. She spent 16 years as a technology marketing leader, the last five taking AI products to market, and has helped more than 100 business leaders find where AI will add value and implement it.
+Louise Read founded codi studio. She spent 16 years as a technology marketing leader, the last five taking AI products to market, and has helped more than 100 business leaders find where AI will add value and implement it.
 
-### **What is Codi Studio?**
+### **What is codi studio?**
 
-Codi Studio is the AI partner for established businesses. We help leadership teams find where AI will add value and redesign how the business works around it, so AI delivers commercial results.
+codi studio is the AI partner for business leaders. We help leadership teams find where AI will add value and redesign how the business works around it, so AI delivers commercial results.
 
-### **What is Codi Studio's vision?**
+### **What is codi studio's vision?**
 
 Every business run by people and AI together, and more profitable for it.
 
 ### **Can a business really run on AI agents?**
 
-Codi Studio does. It runs on a team of ten AI agents, from a chief of staff to client managers for each account, with nothing reaching a client without the founder's approval.
+codi studio does. It runs on a team of ten AI agents, from a chief of staff to client managers for each account, with nothing reaching a client without the founder's approval.
 
 ### **Who should lead AI in a business?**
 
