@@ -2,7 +2,7 @@
    Analytics only loads after the visitor clicks Accept (UK GDPR / PECR).
    The choice is remembered in this browser. */
 (function () {
-  var GA_ID = 'G-XXXXXXXXXX'; // set to the real Measurement ID
+  var GA_ID = 'G-5296ZG77LR';
   if (!/^G-[A-Z0-9]{6,}$/.test(GA_ID) || GA_ID === 'G-XXXXXXXXXX') return;
   var KEY = 'codi-cookie-choice';
   window.dataLayer = window.dataLayer || [];
