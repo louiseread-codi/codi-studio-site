@@ -85,7 +85,7 @@ def plain(s):
 
 
 def md_to_html(md):
-    out, faqs, para, lst, ltype = [], [], [], [], None
+    out, faqs, para, lst, ltype, tbl = [], [], [], [], None, []
     section, pending_q = None, None
 
     def flush_para():
@@ -108,9 +108,25 @@ def md_to_html(md):
             out.append(f'<{tag}>' + ''.join(f'<li>{inline(i)}</li>' for i in lst) + f'</{tag}>')
             lst, ltype = [], None
 
+    def flush_table():
+        nonlocal tbl
+        if tbl:
+            rows = [r for r in tbl if not re.fullmatch(r'[\s|:\-]+', r)]
+            cells = [[c.strip() for c in r.strip().strip('|').split('|')] for r in rows]
+            if cells and not any(cells[0]):
+                cells = cells[1:]
+            if cells:
+                head = ''.join(f'<th>{inline(c)}</th>' for c in cells[0])
+                trs = ''.join('<tr>' + ''.join(f'<td>{inline(c)}</td>' for c in r) + '</tr>' for r in cells[1:])
+                out.append(f'<div class="table-wrap"><table><thead><tr>{head}</tr></thead><tbody>{trs}</tbody></table></div>')
+            tbl = []
+
     for raw in md.splitlines():
         hard_break = raw.endswith('  ')
         line = raw.strip()
+        if line.startswith('|'):
+            flush_para(); flush_list(); tbl.append(line); continue
+        flush_table()
         h = re.match(r'(#{2,4})\s+(.*)', line)
         li = re.match(r'[*\-]\s+(.*)', line)
         ol = re.match(r'\d+\\?\.\s+(.*)', line)
@@ -139,7 +155,7 @@ def md_to_html(md):
         para.append(line)
         if hard_break:
             flush_para()
-    flush_para(); flush_list()
+    flush_para(); flush_list(); flush_table()
     body = '\n'.join(out)
     body = body.replace('<h2 id="sources">', '<h2 id="sources" class="sources-h">')
     return body, faqs
@@ -211,6 +227,10 @@ ARTICLE_CSS = """
 .prose ul,.prose ol{margin:0 0 24px;padding-left:24px}
 .prose li{margin:0 0 10px;padding-left:4px}
 .prose li::marker{color:#8DFFBE}
+.prose .table-wrap{overflow-x:auto;margin:0 0 28px}
+.prose table{border-collapse:collapse;width:100%;font-size:15px;line-height:1.5}
+.prose th,.prose td{text-align:left;padding:10px 12px;border-bottom:1px solid rgba(228,204,255,0.18);vertical-align:top}
+.prose th{color:#fff;font-weight:600}
 .prose strong{color:#fff;font-weight:600}
 .prose a{color:#8DFFBE;text-decoration:underline;text-underline-offset:3px}
 .prose a:hover{color:#35FF9A}
