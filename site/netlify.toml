@@ -5,6 +5,20 @@ to = "https://codistudio.ai/:splat"
 status = 301
 force = true
 
+# www version of the old domain, so it can't show as a second copy of the site in Google
+[[redirects]]
+from = "https://www.codistudio.co.uk/*"
+to = "https://codistudio.ai/:splat"
+status = 301
+force = true
+
+# www version of the new domain, straight to the main address in one hop
+[[redirects]]
+from = "https://www.codistudio.ai/*"
+to = "https://codistudio.ai/:splat"
+status = 301
+force = true
+
 [[redirects]]
 from = "/resources"
 to = "/resources.html"

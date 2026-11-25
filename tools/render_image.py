@@ -84,7 +84,11 @@ def draw_icon(d, name, colour):
     w = max(2, int(1.3 * u))
     P = lambda x, y: (x0 + x * u, y0 + y * u)
     col = rgb(colour)
-    def line(*pts): d.line([P(*p) for p in pts], fill=col, width=w, joint='curve')
+    def line(*pts):
+        d.line([P(*p) for p in pts], fill=col, width=w, joint='curve')
+        for p in (pts[0], pts[-1]):              # round caps, Lucide style
+            cx, cy = P(*p); r = w / 2
+            d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=col)
     def rrect(x, y, x2, y2, rad=1.2): d.rounded_rectangle([P(x, y), P(x2, y2)], radius=rad * u, outline=col, width=w)
     def circle(cx, cy, r): d.ellipse([P(cx - r, cy - r), P(cx + r, cy + r)], outline=col, width=w)
     if name == 'bars':
@@ -95,7 +99,7 @@ def draw_icon(d, name, colour):
         line((3, 17), (5, 19), (9, 15)); line((3, 7), (5, 9), (9, 5))
         line((13, 6), (21, 6)); line((13, 12), (21, 12)); line((13, 18), (21, 18))
     elif name == 'layers':
-        line((12, 2), (22, 7), (12, 12), (2, 7), (12, 2)); line((2, 12), (12, 17), (22, 12)); line((2, 17), (12, 22), (22, 17))
+        line((7, 4.5), (12, 2), (22, 7), (12, 12), (2, 7), (7, 4.5)); line((2, 12), (12, 17), (22, 12)); line((2, 17), (12, 22), (22, 17))
     elif name == 'trend':
         line((2, 17), (8.5, 10.5), (13.5, 15.5), (22, 7)); line((16, 7), (22, 7), (22, 13))
     elif name == 'bulb':

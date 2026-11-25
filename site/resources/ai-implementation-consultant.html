@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What does an AI implementation consultant do? And how to choose the right one | codi studio</title>
+<meta name="description" content="What an AI implementation consultant does, how they differ from AI coaches and AI experts, how to know it&#x27;s worked, the red flags and how to choose the right one.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#12032E;font-family:'Poppins',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#8DFFBE}
+a:hover{color:#35FF9A}
+@keyframes codiMarquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+@media (max-width:720px){
+.mobile-optional-image{display:none!important}
+[data-m="cluster"]{display:flex!important;flex-direction:column;gap:12px}
+[data-m="cluster"]>*{transform:none!important;align-self:stretch!important}
+[data-m="gallery"]{grid-template-columns:1fr 1fr!important;grid-template-rows:none!important;grid-auto-rows:200px}
+[data-m="gallery"]>*{grid-area:auto!important}
+[data-m="gallery"]>*:first-child{grid-column:1/-1!important;grid-row:span 2!important}
+[data-m="qfig"]{padding:56px 8px!important}
+[data-m="qmark"]{font-size:72px!important}
+[data-m="pad"]{padding:24px!important}
+}
+[hidden]{display:none!important}
+@media (max-width:720px){[data-m="cluster"]>*:not([data-mkeep]){display:none!important}}
+.hv1:hover{color:#8DFFBE!important}
+.hv2:hover{background:#8DFFBE!important;color:#12032E!important}
+.hvlegal:hover{color:#8DFFBE!important}
+.legal{max-width:820px;margin:0 auto;padding:88px 32px 120px;font-size:17px;line-height:1.7;color:#E9E3F7}
+.legal h1{margin:0 0 12px;font-size:clamp(38px,4.6vw,58px);font-weight:700;letter-spacing:-0.03em;line-height:1.06;color:#fff}
+.legal h2{margin:56px 0 16px;padding-top:40px;border-top:1px solid rgba(228,204,255,0.18);font-size:clamp(24px,2.6vw,30px);font-weight:700;letter-spacing:-0.02em;line-height:1.2;color:#fff;text-wrap:balance}
+.legal h3{margin:32px 0 10px;font-size:19px;font-weight:700;color:#8DFFBE}
+.legal p{margin:0 0 16px;text-wrap:pretty}
+.legal ul{margin:0 0 16px;padding-left:22px}
+.legal li{margin:0 0 8px}
+.legal li::marker{color:#35FF9A}
+.legal strong{color:#fff;font-weight:600}
+.legal .pp-date{color:#CFC4E8;font-size:15px;margin-bottom:32px}
+.legal .pp-purposes{display:flex;flex-direction:column;gap:16px;margin:24px 0}
+.legal .pp-purpose{background:#1E1034;border:1px solid rgba(228,204,255,0.16);border-radius:20px;padding:24px}
+.legal dl{margin:0}
+.legal dt{font-size:13px;font-weight:600;color:#CFC4E8;margin-top:12px}
+.legal dt:first-child{margin-top:0}
+.legal dd{margin:4px 0 0}
+@media (max-width:720px){.legal{padding:56px 20px 88px}.legal .pp-purpose{padding:20px}}
+
+.menu-toggle{display:none;align-items:center;justify-content:center;gap:10px;min-height:44px;padding:10px 16px;border:1px solid rgba(228,204,255,0.35);border-radius:999px;background:transparent;color:#fff;font:inherit;font-size:15px;font-weight:500;cursor:pointer}
+.menu-toggle svg{width:20px;height:20px;flex-shrink:0}
+.menu-toggle:hover{border-color:#8DFFBE;color:#8DFFBE}
+.site-header :focus-visible{outline:2px solid #8DFFBE;outline-offset:5px}
+@media (max-width:720px){
+.site-header>div{padding:14px 20px!important;gap:16px!important}
+.site-header.menu-ready .menu-toggle{display:inline-flex}
+.site-header .primary-nav{flex-basis:100%;align-items:stretch!important;flex-direction:column;gap:4px!important;padding-top:12px;border-top:1px solid rgba(228,204,255,0.18)}
+.site-header.menu-ready .primary-nav{display:none!important}
+.site-header.menu-open .primary-nav{display:flex!important}
+.site-header .primary-nav a{display:block;padding:12px 0;min-height:24px}
+.site-header .primary-nav .hv2{margin-top:8px;text-align:center}
+}
+/* page */
+.diff-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:20px}
+.diff-grid>*{flex:0 1 calc((100% - 40px) / 3);min-width:min(100%,300px);box-sizing:border-box}
+/* Blog image system (see README). Renders at any card width via container query units. */
+.blog-image{aspect-ratio:3/2;width:100%;box-sizing:border-box;border-radius:16px;overflow:hidden;position:relative;isolation:isolate;container-type:inline-size}
+.bi-wordmark{position:absolute;left:6cqw;top:5cqw;font-weight:700;font-size:3.2cqw;letter-spacing:-0.03em}
+.bi-number{position:absolute;left:6cqw;bottom:27%;font-size:30cqw;font-weight:800;letter-spacing:-0.07em;line-height:0.85}
+.bi-hook{position:absolute;left:6cqw;bottom:28%;font-size:11.5cqw;font-weight:800;letter-spacing:-0.05em;line-height:0.95}
+.bi-icon{position:absolute;left:26cqw;top:17%;width:36cqw;height:36cqw}
+.bi-dot{position:absolute;width:25cqw;height:25cqw;border-radius:50%;bottom:-10cqw}
+.bi-dot-1{right:1.7cqw}
+.bi-dot-2{right:-11.7cqw}
+.blog-card{background:#1E1034;border:1px solid rgba(228,204,255,0.16);border-radius:24px;padding:16px;display:flex;flex-direction:column;gap:22px}
+.blog-card-body{padding:0 12px 16px;display:flex;flex-direction:column;gap:14px;flex:1}
+.blog-meta{display:flex;align-items:center;gap:12px;font-size:14px;color:#CFC4E8}
+.blog-tag{font-weight:600;font-size:13px;padding:6px 12px;border-radius:999px}
+.blog-title{margin:0;font-size:24px;font-weight:700;letter-spacing:-0.02em;line-height:1.2;text-wrap:balance}
+.blog-title a{color:#FFFFFF;text-decoration:none}
+.blog-excerpt{margin:0;font-size:16px;line-height:1.6;color:#CFC4E8;text-wrap:pretty;flex:1}
+.blog-read{color:#8DFFBE;text-decoration:none;font-weight:600;font-size:16px}
+.blog-read:hover{color:#35FF9A}
+.blog-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:20px}
+.hvpill:hover{border-color:rgba(228,204,255,0.6)!important}
+.filter-btn{font-family:inherit;font-size:15px;font-weight:500;min-height:44px;padding:10px 20px;border-radius:999px;border:1px solid rgba(228,204,255,0.3);background:transparent;color:#FFFFFF;cursor:pointer}
+.filter-btn[aria-pressed="true"]{font-weight:600;border-color:#35FF9A;background:#35FF9A;color:#12032E}
+/* article */
+.article-wrap{max-width:760px;margin:0 auto;padding:0 32px;box-sizing:content-box}
+.prose{font-size:18px;line-height:1.75;color:#E9E2F7}
+.prose p{margin:0 0 22px}
+.prose h2{margin:56px 0 18px;font-size:clamp(26px,3vw,34px);font-weight:700;letter-spacing:-0.02em;line-height:1.2;color:#fff}
+.prose h3{margin:36px 0 12px;font-size:22px;font-weight:700;letter-spacing:-0.01em;line-height:1.3;color:#fff}
+.prose ul,.prose ol{margin:0 0 24px;padding-left:24px}
+.prose li{margin:0 0 10px;padding-left:4px}
+.prose li::marker{color:#8DFFBE}
+.prose .table-wrap{overflow-x:auto;margin:0 0 28px}
+.prose table{border-collapse:collapse;width:100%;font-size:15px;line-height:1.5}
+.prose th,.prose td{text-align:left;padding:10px 12px;border-bottom:1px solid rgba(228,204,255,0.18);vertical-align:top}
+.prose th{color:#fff;font-weight:600}
+.prose strong{color:#fff;font-weight:600}
+.prose a{color:#8DFFBE;text-decoration:underline;text-underline-offset:3px}
+.prose a:hover{color:#35FF9A}
+.prose blockquote{margin:36px 0;padding:4px 0 4px 24px;border-left:3px solid #35FF9A;font-size:clamp(22px,2.6vw,28px);font-weight:600;line-height:1.35;letter-spacing:-0.01em;color:#fff}
+.prose blockquote p{margin:0}
+.prose .sources-h ~ ul{font-size:14px;line-height:1.6;color:#CFC4E8}
+.prose .sources-h{font-size:20px}
+.article-image{border-radius:20px;margin:0 0 48px}
+</style>
+
+<!-- seo -->
+<link rel="canonical" href="https://codistudio.ai/resources/ai-implementation-consultant">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#12032E">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="codi studio">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="What does an AI implementation consultant do? And how to choose the right one | codi studio">
+<meta property="og:description" content="What an AI implementation consultant does, how they differ from AI coaches and AI experts, how to know it&#x27;s worked, the red flags and how to choose the right one.">
+<meta property="og:url" content="https://codistudio.ai/resources/ai-implementation-consultant">
+<meta property="og:image" content="https://codistudio.ai/images/resources/ai-implementation-consultant.png">
+<meta name="twitter:image" content="https://codistudio.ai/images/resources/ai-implementation-consultant.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="What does an AI implementation consultant do? And how to choose the right one | codi studio">
+<meta name="twitter:description" content="What an AI implementation consultant does, how they differ from AI coaches and AI experts, how to know it&#x27;s worked, the red flags and how to choose the right one.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "What does an AI implementation consultant do? And how to choose the right one", "description": "What an AI implementation consultant does, how they differ from AI coaches and AI experts, how to know it's worked, the red flags and how to choose the right one.", "datePublished": "2026-11-25", "dateModified": "2026-11-25", "mainEntityOfPage": "https://codistudio.ai/resources/ai-implementation-consultant", "author": {"@type": "Person", "name": "Louise Read", "@id": "https://codistudio.ai/speaking#louise"}, "publisher": {"@id": "https://codistudio.ai/#org"}, "image": "https://codistudio.ai/images/resources/ai-implementation-consultant.png"}, {"@type": "ProfessionalService", "@id": "https://codistudio.ai/#org", "name": "Codi Studio", "alternateName": ["codi studio", "Codi Studio AI", "codistudio.ai"], "url": "https://codistudio.ai/", "logo": {"@type": "ImageObject", "url": "https://codistudio.ai/apple-touch-icon.png", "width": 180, "height": 180}, "sameAs": ["https://www.linkedin.com/company/codi-studio", "https://www.youtube.com/channel/UCgojBGcJphn3vuFl9xBCvhg"]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What does an AI implementation consultant do?", "acceptedAnswer": {"@type": "Answer", "text": "An AI implementation consultant helps you redesign your business for the AI era. That means mapping the business, connecting your business context into AI, building automations and agents with your teams, putting guardrails in place, training and handing over to internal owners, and measuring against commercial outcomes."}}, {"@type": "Question", "name": "What's the difference between an AI consultant and an AI implementation consultant?", "acceptedAnswer": {"@type": "Answer", "text": "An AI consultant is a broad title. An AI coach teaches employees how to use AI, and an AI expert builds automations and agents, but won’t necessarily tie them to commercial outcomes. An AI implementation consultant combines an understanding of business and AI: they help you redesign the business, connect your business context, build with your teams, put guardrails in place, hand over to internal owners and measure the commercial outcome."}}, {"@type": "Question", "name": "What is the difference between AI training and AI implementation?", "acceptedAnswer": {"@type": "Answer", "text": "Training gets employees using AI. Implementation redesigns the business with AI, centralising builds where they add commercial value. Once you implement, training is on the real automations and agents built for your organisation."}}, {"@type": "Question", "name": "How much does an AI implementation consultant cost?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on the size of your business, how many departments you're redesigning, and whether the consultant builds it for you or with you. Large advisory firms are priced for large enterprises. codi studio's programmes are priced for £1M to £25M businesses, and the value is quantified in the mapping stage, where every workflow is tied to growth or money saved."}}, {"@type": "Question", "name": "How do I choose an AI implementation consultant?", "acceptedAnswer": {"@type": "Answer", "text": "Look for technical capability and business understanding together: someone who thinks about the whole business, speaks the language of the CEO and the C-suite, ideally has run a business, and trains your team rather than building and leaving."}}, {"@type": "Question", "name": "Should you hire an AI implementation consultant or build AI in-house?", "acceptedAnswer": {"@type": "Answer", "text": "You could hire one in-house, but it’s one of the fastest-growing roles on the market, so they’re in demand and command a high salary. An internal person can also get pulled into the existing way of doing things and internal politics. An external AI implementation consultant brings a perspective from lots of different businesses, plus the commercial acumen to tie AI to growth and money saved. Done well, it ends up in-house anyway: your team owns and runs everything that's built."}}, {"@type": "Question", "name": "Who owns the AI a consultant builds?", "acceptedAnswer": {"@type": "Answer", "text": "Your business should. At codi studio, everything is built with your team inside your own Copilot or Claude account, with documentation and internal owners, so you can adapt it without coming back to us."}}, {"@type": "Question", "name": "Do small businesses need an AI implementation consultant?", "acceptedAnswer": {"@type": "Answer", "text": "The value of AI is broadly similar for a £1M and a £25M business. A smaller business saves more from not having to hire and keeping management layers low; a larger one gains from leaner, more agile teams across many departments."}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Resources", "item": "https://codistudio.ai/resources"}, {"@type": "ListItem", "position": 2, "name": "What does an AI implementation consultant do? And how to choose the right one", "item": "https://codistudio.ai/resources/ai-implementation-consultant"}]}]}</script>
+<!-- /seo -->
+</head>
+<body>
+<div style="background:#12032E;color:#fff;font-family:'Poppins',sans-serif;min-height:100vh">
+
+<header class="site-header" style="position:sticky;top:0;z-index:10;background:rgba(18,3,46,0.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(228,204,255,0.12)">
+  <div style="max-width:1200px;margin:0 auto;padding:16px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap">
+    <a href="/" aria-label="codi studio home" style="display:inline-flex;align-items:baseline;font-weight:700;font-size:26px;line-height:1;letter-spacing:-0.03em;color:#fff;text-decoration:none">cod<span style="position:relative;display:inline-block">ı<span style="position:absolute;top:0.02em;left:calc(50% - 0.17em);width:0.21em;height:0.21em;border-radius:50%;background:#8B4BFF"></span><span style="position:absolute;top:0.02em;left:calc(50% - 0.05em);width:0.21em;height:0.21em;border-radius:50%;background:#35FF9A;mix-blend-mode:screen"></span></span><span style="margin-left:0.28em">studio</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+      <span data-menu-label>Menu</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+    <nav id="primary-navigation" class="primary-nav" aria-label="Main" style="display:flex;align-items:center;gap:28px;flex-wrap:wrap;font-size:15px;font-weight:500">
+      <a data-m="navlink" href="/ai-partner-programme" style="color:#fff;text-decoration:none" class="hv1">AI Partner Programme</a>
+      <a data-m="navlink" href="/speaking" style="color:#fff;text-decoration:none" class="hv1">Book an AI Speaker</a>
+      <a data-m="navlink" href="/about" style="color:#fff;text-decoration:none" class="hv1">About</a>
+      <a data-m="navlink" href="/resources" style="color:#8DFFBE;text-decoration:none" aria-current="page">Resources</a>
+      <a href="https://calendly.com/louise-read-codi-marketing/30min" target="_blank" rel="noopener" style="background:#35FF9A;color:#12032E;text-decoration:none;font-weight:600;padding:11px 22px;border-radius:999px" class="hv2">Book a call</a>
+    </nav>
+  </div>
+</header>
+
+<div style="padding:72px 0 40px">
+<div class="article-wrap" style="display:flex;flex-direction:column;gap:22px">
+<a href="/resources" class="hv1" style="color:#CFC4E8;text-decoration:none;font-size:15px;font-weight:500">← All resources</a>
+<div class="blog-meta"><span class="blog-tag" style="background: #8B4BFF; color: #FFFFFF">Implementation</span><span>25 Nov 2026</span></div>
+<h1 style="margin:0;font-size:clamp(34px,4.4vw,52px);font-weight:700;letter-spacing:-0.03em;line-height:1.08;text-wrap:balance">What does an AI implementation consultant do? And how to choose the right one</h1>
+<p style="margin:0;font-size:15px;color:#CFC4E8">By Louise Read, founder, codi studio</p>
+</div>
+</div>
+<main>
+<article class="article-wrap" style="padding-bottom:96px">
+<div class="blog-image article-image"><img src="/images/resources/ai-implementation-consultant.png" alt="" loading="lazy" style="display:block;width:100%;height:100%;object-fit:cover"></div>
+<div class="prose">
+<p>In 2026, we saw an influx of businesses “adopting AI”, or what they thought was adopting AI. These businesses bought AI licences and ran training to get their employees using AI.</p>
+<p>And yet, more than half of CEOs (56%) have seen no significant financial benefit from AI so far, according to <a href="https://www.pwc.com/gx/en/news-room/press-releases/2026/pwc-2026-global-ceo-survey.html" target="_blank" rel="noopener">PwC’s 2026 Global CEO Survey</a>.</p>
+<p>That gap is a significant opportunity for businesses that adopt AI the right way.</p>
+<p>An AI implementation consultant’s job is to help business leaders redesign their business for the AI era, using AI to drive commercial opportunity: doubling down on automation to help you grow, or saving money with an AI workforce of agents doing the work.</p>
+<p>In this article, we&#x27;ll explore what an AI implementation consultant does, how they differ from an AI coach or an AI expert, why redesigning for AI is now a leadership decision, how to measure AI, and how to choose the right AI implementation partner.</p>
+<h2 id="why-businesses-need-ai-implementation-support-to-see-a-return-on-ai-investment">Why businesses need AI implementation support to see a return on AI investment</h2>
+<p>Most businesses are seeing no return on the money they&#x27;ve invested in AI licences, training and upskilling. The reality is that a lot of what has been built has been employee-led, with AI pointed at low-value admin tasks like drafting emails, producing content or joining up data. All of which is valuable, but none of which moves the needle on the profit and loss. If that&#x27;s all a business is doing, it&#x27;s just a really expensive project, and you’re not transforming anything. (We wrote more about this in <a href="https://codistudio.ai/resources/your-ai-is-a-very-expensive-training-pilot">Your AI is a very expensive training pilot</a>.)</p>
+<p>What businesses actually need to do is redesign their business with AI: centralising AI builds and deployment where they will add commercial value. That&#x27;s something the CEO and the leadership team need to manage, and for many CEOs it&#x27;s unfamiliar territory. <a href="https://www.gartner.com/en/newsroom/press-releases/2026-10-20-gartner-says-44-percent-of-ceos-struggle-to-demonstrate-ai-financial-returns-as-technology-becomes-central-to-growth" target="_blank" rel="noopener">Gartner found</a> that 44% of CEOs struggle to show financial returns from AI, yet 75% plan to increase their technology investment. <a href="https://www.anthropic.com/research/working-with-ai" target="_blank" rel="noopener">Anthropic&#x27;s research</a>, published in November 2026, found the highest-value uses of AI came from businesses that reorganised around it. When AI is simply handed to individuals, the gains stay in pockets, because individuals can&#x27;t change the work beyond their own corner of the business.</p>
+<h2 id="the-new-reality-for-business-leaders-an-ai-workforce">The new reality for business leaders: an AI workforce</h2>
+<p>AI continues to get more capable while its cost keeps falling. Compare that with the rising cost of employing a human workforce. Businesses that implement AI correctly can benefit in one of two ways:</p>
+<ul><li><strong>Run a leaner business:</strong> a reduction in workforce, fewer layers of management and lower people costs, with AI driving the growth. Cost down, profit up.</li><li><strong>Maximise output and growth from the same team:</strong> the same people, with AI on top of their work, focused on growth.</li></ul>
+<p>Both are valid. Businesses that buy the licences and expect things to change radically overnight won’t see returns from AI, and it will continue to be a rising cost on their P&amp;L.</p>
+<p>An AI implementation consultant helps you decide which route fits your business, and then makes it happen.</p>
+<h2 id="what-does-an-ai-implementation-consultant-do">What does an AI implementation consultant do?</h2>
+<p>AI consultant and strategist is now the second-fastest-growing job in the US, according to <a href="https://www.linkedin.com/pulse/linkedin-jobs-rise-2026-25-fastest-growing-roles-us-linkedin-news-dlb1c" target="_blank" rel="noopener">LinkedIn’s Jobs on the Rise 2026 report</a>. That’s no surprise, given that businesses need to start making a return on their investment. But it’s important to know which skills you’re looking for.</p>
+<p>An AI implementation consultant helps you redesign your whole business with AI and, crucially, find where it will have a commercial impact.</p>
+<p>An AI implementation consultant shouldn’t be confused with an AI coach or an AI expert. Those roles have very different outcomes.</p>
+<p>An AI coach teaches employees how to use existing tools.</p>
+<p>An AI expert builds automations and agents, but won’t necessarily tie them to commercial outcomes.</p>
+<p>An AI implementation consultant, on the other hand, combines an understanding of business and AI. They help senior executives map out their entire business, identify processes ripe for AI and build systems and processes around them, while making sure guardrails are in place for data protection, audit trails and human approval. Crucially, an AI implementation consultant makes sure anything that is built and implemented is aligned to a clear commercial goal, like growth or money saved.</p>
+<p>They support both the build and the implementation, rolling it out across the organisation and supporting employee enablement. They step in as an AI partner and own the entire process end to end with the CEO and the senior leadership team.</p>
+<h2 id="should-you-hire-an-ai-implementation-consultant-or-build-ai-in-house">Should you hire an AI implementation consultant or build AI in-house?</h2>
+<p>Of course, you could hire your own AI implementation consultant in-house. But as we’ve shared, this is one of the fastest-growing roles on the market right now: they’re in demand, and they will command a high salary.</p>
+<p>Redesigning your business for the AI era is a big shift, and not one to be taken lightly. An internal person running it can come with limitations: they can get sucked into the existing way of doing things and into internal politics.</p>
+<p>It can be really beneficial to bring in someone with an external perspective: someone who has done this for lots of different businesses, who can help you reimagine your business for the AI era, and who still has commercial acumen.</p>
+<p>An AI implementation consultant should be able to break AI down into non-technical language for the CEO, the C-suite and the leadership team, and translate it into business outcomes, so your investment in AI has its own revenue line in your profit and loss.</p>
+<p>That said, the right AI implementation consultant will make sure it ends up in-house anyway: your team owns and runs everything that&#x27;s built.</p>
+<h2 id="what-an-ai-implementation-consultant-does-in-practice">What an AI implementation consultant does in practice</h2>
+<h3 id="mapping-the-business-and-finding-the-commercial-value">Mapping the business and finding the commercial value</h3>
+<p>An AI implementation consultant maps out your entire business: the departments that exist today, and the ones you wish could exist. They identify the workflows AI can take on, and tie each one to a measurable outcome, growth or money saved. That&#x27;s where the value of AI gets quantified, and it becomes what the work is measured against. To see where your business is with AI today, start with our <a href="https://codistudio.ai/resources/how-to-evaluate-where-your-business-is-with-ai">AI evaluation guide</a>.</p>
+<h3 id="connecting-your-business-context-into-ai">Connecting your business context into AI</h3>
+<p>An AI implementation consultant connects your existing business context into AI: your emails, your documents in Google Drive or OneDrive, your CRM, and the technology you already use. That&#x27;s how you get more value from what you already have. AI needs three things to do real work: context, connected tools and systems.</p>
+<h3 id="building-automations-and-agents-with-your-teams">Building automations and agents with your teams</h3>
+<p>An AI implementation consultant builds the automations and agents that do the work, centralised so you&#x27;re not paying for the same build twice in different teams. At codi studio, our AI and technology implementation consultants build with your leaders, hand in hand, with laptops open next to one another, inside your own Copilot or Claude account. Everything that&#x27;s built is owned by your organisation. <a href="https://www.anthropic.com/research/working-with-ai" target="_blank" rel="noopener">Anthropic&#x27;s research</a> found tools built by outside vendors often went out of date within months as AI improved, and it was the experts inside the business who were needed to design and maintain the agents.</p>
+<h3 id="putting-guardrails-and-quality-control-in-place">Putting guardrails and quality control in place</h3>
+<p>An AI implementation consultant puts guardrails and quality controls in place, with humans checking processes, so the outputs are safe and reliable. That includes your data. When CEOs worry about data risk, the real question is their own data processes: whether the right employees have access to the right things, and whether there&#x27;s an AI policy that puts the guardrails in place. Where a person must approve something before it goes out depends on each business&#x27;s own risk appetite, and that&#x27;s for the business to define. At codi studio, our AI and technology implementation consultants help you put data governance and an AI policy in place.</p>
+<h3 id="training-your-team-and-handing-over">Training your team and handing over</h3>
+<p>An AI implementation consultant trains your team members on the real automations and agents built for your business, with clear documentation, a proper handover and internal owners for each one.</p>
+<p>A lot of advisory companies and traditional consultants will just build, without thinking about how to roll it out across the organisation. At codi studio, our AI and technology implementation consultants also train your team to measure AI and plan more automations, so as things change, you can adapt without coming back to us.</p>
+<h3 id="measuring-and-refining-against-commercial-outcomes">Measuring and refining against commercial outcomes</h3>
+<p>An AI implementation consultant puts measurement in place, tracking against commercial outcomes: growth first, money saved second, time back last. Those outcomes are monitored over time, and the agents are refined until they deliver a good result.</p>
+<h2 id="how-will-you-know-ai-implementation-has-worked">How will you know AI implementation has worked?</h2>
+<p>The answer should be simple: cost down, profit up. In practice, that looks like this:</p>
+<ul><li><strong>AI is driving measurable growth or money saved:</strong> the automations and agents built with your AI implementation consultant are driving measurable growth or money saved.</li><li><strong>Returns:</strong> lower costs and higher profit, with lower overheads and growth driven through automation.</li><li><strong>Less risk:</strong> less of the cost and risk that comes with employing people.</li><li><strong>Faster decisions:</strong> fewer layers of middle management, so the business is more agile.</li><li><strong>AI across the organisation:</strong> implemented in every department, beyond a few keen individuals.</li><li><strong>Multiple agents doing the work:</strong> agents conducting work across the business.</li><li><strong>Orchestrators in each department:</strong> people who decide the outcome, where to focus and what the agents do, based on data.</li></ul>
+<h2 id="how-to-choose-an-ai-implementation-consultant">How to choose an AI implementation consultant</h2>
+<p>You want an AI implementation consultant who has the technical capability and also deeply understands how businesses run. Being an expert in AI isn’t enough.</p>
+<p>An AI implementation consultant needs to be able to translate how AI will drive value for the organisation in a way the C-suite understands and speaks the business language.</p>
+<p>Ideally, find someone who has run a business. They&#x27;ll understand the risk of employing people, how long it takes to upskill someone, and the additional costs of running a business. Very few people are looking at the bigger picture like this. A lot of AI consultants are software engineers who have worked on AI for a long time, but aren&#x27;t necessarily thinking about the business as a whole.</p>
+<p>Large advisory firms do this work too, but they&#x27;re priced for large enterprises. The AI implementation consultant you choose has to fit the size of your organisation and what you can afford.</p>
+<h3 id="red-flags-when-hiring-an-ai-implementation-consultant">Red flags when hiring an AI implementation consultant</h3>
+<ul><li><strong>They only talk technology.</strong> Models, tools and prompts, with no mention of your performance indicators or the P&amp;L. Built in isolation, AI won&#x27;t change how the business performs.</li><li><strong>They build and leave.</strong> No training on what they&#x27;ve built, no documentation and no internal owners. Adoption stalls, and the builds stop being used.</li><li><strong>Everything sits in their accounts.</strong> If the automations and agents live in the consultant&#x27;s own accounts, you&#x27;ll have to keep paying them to keep it running or change anything.</li><li><strong>They measure time saved or nothing at all.</strong> Drafting emails faster isn&#x27;t a commercial outcome. If there&#x27;s no plan to track growth or money saved, and to refine the agents over time, you won&#x27;t see it on the P&amp;L.</li><li><strong>They promise a return before they know your business.</strong> The value is only quantified once your business has been mapped and the AI priorities are tied to measurable outcomes.</li><li><strong>There are no guardrails.</strong> Outputs going out with no human check put your data, your customers and your brand at risk.</li></ul>
+<h2 id="how-codi-studio-helps-you-see-a-return-on-ai">How codi studio helps you see a return on AI</h2>
+<p>Buying AI licences and running training was the first step. To see a return, the business has to be redesigned for the AI era, with AI builds centralised where they drive growth or save money, and the CEO and leadership team leading it.</p>
+<p>The right AI implementation consultant brings AI expertise and commercial acumen together: they map the whole business, connect your business context, build with your teams, put guardrails in place, hand over to internal owners and measure every build against commercial outcomes.</p>
+<p>codi studio is the AI partner that drives commercial value from AI. Our AI and technology implementation consultants bring business experience from working with large enterprises and start-ups, balancing AI expertise with commercial acumen. We map your business, connect your context, build AI automations and agents with your teams, and measure every build against growth or money saved. We build it with your teams, so it stays theirs. See the <a href="https://codistudio.ai/ai-partner-programme">AI Partner Programme</a>, or <a href="https://calendly.com/louise-read-codi-marketing/30min" target="_blank" rel="noopener">book a call</a>.</p>
+<h2 id="don-t-just-take-it-from-us">Don’t just take it from us</h2>
+<blockquote><p>&quot;Codi studio mapped out my whole business, identifying where AI would help and where it wouldn&#x27;t, and gave me a roadmap with clear priorities. Then they turned my existing processes into AI automations and agents across finance, marketing and operations. I saw an immediate jump in traffic to my site, almost doubling in a week from one automation. Adding new products to my store used to take days and now takes a couple of hours. I started out with very little confidence in AI, and now I&#x27;m telling everyone about it.&quot;</p></blockquote>
+<p>Clementia Harrison, Founder, Beeaches Art</p>
+<h2 id="faqs">FAQs</h2>
+<h3 id="what-does-an-ai-implementation-consultant-do">What does an AI implementation consultant do?</h3>
+<p>An AI implementation consultant helps you redesign your business for the AI era. That means mapping the business, connecting your business context into AI, building automations and agents with your teams, putting guardrails in place, training and handing over to internal owners, and measuring against commercial outcomes.</p>
+<h3 id="what-s-the-difference-between-an-ai-consultant-and-an-ai-implementation-consultant">What&#x27;s the difference between an AI consultant and an AI implementation consultant?</h3>
+<p>An AI consultant is a broad title. An AI coach teaches employees how to use AI, and an AI expert builds automations and agents, but won’t necessarily tie them to commercial outcomes. An AI implementation consultant combines an understanding of business and AI: they help you redesign the business, connect your business context, build with your teams, put guardrails in place, hand over to internal owners and measure the commercial outcome.</p>
+<h3 id="what-is-the-difference-between-ai-training-and-ai-implementation">What is the difference between AI training and AI implementation?</h3>
+<p>Training gets employees using AI. Implementation redesigns the business with AI, centralising builds where they add commercial value. Once you implement, training is on the real automations and agents built for your organisation.</p>
+<h3 id="how-much-does-an-ai-implementation-consultant-cost">How much does an AI implementation consultant cost?</h3>
+<p>It depends on the size of your business, how many departments you&#x27;re redesigning, and whether the consultant builds it for you or with you. Large advisory firms are priced for large enterprises. <a href="https://codistudio.ai/ai-partner-programme">codi studio&#x27;s programmes</a> are priced for £1M to £25M businesses, and the value is quantified in the mapping stage, where every workflow is tied to growth or money saved.</p>
+<h3 id="how-do-i-choose-an-ai-implementation-consultant">How do I choose an AI implementation consultant?</h3>
+<p>Look for technical capability and business understanding together: someone who thinks about the whole business, speaks the language of the CEO and the C-suite, ideally has run a business, and trains your team rather than building and leaving.</p>
+<h3 id="should-you-hire-an-ai-implementation-consultant-or-build-ai-in-house">Should you hire an AI implementation consultant or build AI in-house?</h3>
+<p>You could hire one in-house, but it’s one of the fastest-growing roles on the market, so they’re in demand and command a high salary. An internal person can also get pulled into the existing way of doing things and internal politics. An external AI implementation consultant brings a perspective from lots of different businesses, plus the commercial acumen to tie AI to growth and money saved. Done well, it ends up in-house anyway: your team owns and runs everything that&#x27;s built.</p>
+<h3 id="who-owns-the-ai-a-consultant-builds">Who owns the AI a consultant builds?</h3>
+<p>Your business should. At codi studio, everything is built with your team inside your own Copilot or Claude account, with documentation and internal owners, so you can adapt it without coming back to us.</p>
+<h3 id="do-small-businesses-need-an-ai-implementation-consultant">Do small businesses need an AI implementation consultant?</h3>
+<p>The value of AI is broadly similar for a £1M and a £25M business. A smaller business saves more from not having to hire and keeping management layers low; a larger one gains from leaner, more agile teams across many departments.</p>
+<h2 id="sources" class="sources-h">Sources</h2>
+<ul><li><a href="https://www.pwc.com/gx/en/news-room/press-releases/2026/pwc-2026-global-ceo-survey.html" target="_blank" rel="noopener">PwC, Global CEO Survey, January 2026 (4,454 CEOs).</a></li><li><a href="https://www.gartner.com/en/newsroom/press-releases/2026-10-20-gartner-says-44-percent-of-ceos-struggle-to-demonstrate-ai-financial-returns-as-technology-becomes-central-to-growth" target="_blank" rel="noopener">Gartner, CEO and Senior Business Executive Survey, 2026.</a></li><li><a href="https://www.linkedin.com/pulse/linkedin-jobs-rise-2026-25-fastest-growing-roles-us-linkedin-news-dlb1c" target="_blank" rel="noopener">LinkedIn, Jobs on the Rise 2026 (US), January 2026.</a></li><li><a href="https://www.anthropic.com/research/working-with-ai" target="_blank" rel="noopener">Anthropic, Working with AI, November 2026 (66 interviews across 58 US companies).</a></li></ul>
+</div>
+</article>
+</main>
+<section style="border-top: 1px solid rgba(228,204,255,0.18); position: relative; overflow: hidden; isolation: isolate; background: #12032E">
+<div aria-hidden="true" style="position: absolute; inset: 0; z-index: -2"><img src="/images/codi-studio-office-buildings.jpg" alt="" style="display: block; width: 100%; height: 100%; object-fit: cover"></div>
+<div aria-hidden="true" style="position: absolute; inset: 0; z-index: -1; background: linear-gradient(0deg, rgba(18,3,46,0.95) 0%, rgba(18,3,46,0.82) 50%, rgba(18,3,46,0.95) 100%)"></div>
+<div style="max-width: 1200px; margin: 0 auto; padding: 120px 32px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 24px">
+<h2 style="margin: 0; font-size: clamp(36px, 5vw, 64px); font-weight: 700; letter-spacing: -0.03em; line-height: 1.05; max-width: 900px; text-wrap: balance">Know you need AI in your business, <span style="color: #8DFFBE">but not sure where to start?</span></h2>
+<a href="https://calendly.com/louise-read-codi-marketing/30min" target="_blank" rel="noopener" class="hv2" style="background: #35FF9A; color: #12032E; text-decoration: none; font-weight: 600; font-size: 17px; padding: 16px 30px; border-radius: 999px; margin-top: 8px">Book a call</a>
+</div>
+</section>
+
+<footer style="border-top:1px solid rgba(228,204,255,0.12)">
+  <div style="max-width:1200px;margin:0 auto;padding:48px 32px;display:flex;justify-content:space-between;align-items:flex-start;gap:32px;flex-wrap:wrap">
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <a href="/" aria-label="codi studio home" style="display:inline-flex;align-items:baseline;font-weight:700;font-size:26px;line-height:1;letter-spacing:-0.03em;color:#fff;text-decoration:none">cod<span style="position:relative;display:inline-block">ı<span style="position:absolute;top:0.02em;left:calc(50% - 0.17em);width:0.21em;height:0.21em;border-radius:50%;background:#8B4BFF"></span><span style="position:absolute;top:0.02em;left:calc(50% - 0.05em);width:0.21em;height:0.21em;border-radius:50%;background:#35FF9A;mix-blend-mode:screen"></span></span><span style="margin-left:0.28em">studio</span></a>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:16px;align-items:flex-end">
+      <nav style="display:flex;gap:28px;flex-wrap:wrap;font-size:15px;font-weight:500">
+        <a href="/ai-partner-programme" style="color:#fff;text-decoration:none" class="hv1">AI Partner Programme</a>
+        <a href="/speaking" style="color:#fff;text-decoration:none" class="hv1">Book an AI Speaker</a>
+        <a href="/about" style="color:#fff;text-decoration:none" class="hv1">About</a>
+        <a href="/resources" style="color:#8DFFBE;text-decoration:none" aria-current="page">Resources</a>
+      </nav>
+      <nav aria-label="Legal" style="display:flex;gap:20px;flex-wrap:wrap;font-size:13px"><a href="/privacy-policy" style="color:#CFC4E8;text-decoration:none" class="hvlegal">Privacy Policy</a><a href="/terms-and-conditions" style="color:#CFC4E8;text-decoration:none" class="hvlegal">Terms &amp; Conditions</a></nav>
+    </div>
+  </div>
+</footer>
+</div>
+<script>
+(function(){
+  var header = document.querySelector('.site-header');
+  var toggle = header.querySelector('.menu-toggle');
+  var navigation = header.querySelector('.primary-nav');
+  var mobile = window.matchMedia('(max-width:720px)');
+  function setOpen(open){
+    header.classList.toggle('menu-open', open);
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.querySelector('[data-menu-label]').textContent = open ? 'Close' : 'Menu';
+    toggle.querySelector('path').setAttribute('d', open ? 'M6 6l12 12M6 18L18 6' : 'M4 6h16M4 12h16M4 18h16');
+  }
+  header.classList.add('menu-ready');
+  toggle.addEventListener('click', function(){setOpen(toggle.getAttribute('aria-expanded') !== 'true');});
+  header.addEventListener('keydown', function(event){
+    if(event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true'){
+      setOpen(false);
+      toggle.focus();
+    }
+  });
+  navigation.addEventListener('click', function(event){if(event.target.closest('a')) setOpen(false);});
+  mobile.addEventListener('change', function(){
+    var focusInNavigation = navigation.contains(document.activeElement);
+    var focusOnToggle = document.activeElement === toggle;
+    setOpen(false);
+    if(mobile.matches && focusInNavigation) toggle.focus();
+    if(!mobile.matches && focusOnToggle) navigation.querySelector('a').focus();
+  });
+})();
+
+document.querySelectorAll('.filter-btn').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var topic = btn.getAttribute('data-filter');
+    document.querySelectorAll('.filter-btn').forEach(function (b) {
+      var on = b === btn;
+      b.setAttribute('aria-pressed', on ? 'true' : 'false');
+      b.classList.toggle('hvpill', !on);
+    });
+    document.querySelectorAll('#articles .blog-card').forEach(function (card) {
+      card.hidden = topic !== 'All' && card.getAttribute('data-topic') !== topic;
+    });
+  });
+});
+
+</script>
+</body>
+</html>

@@ -8,9 +8,10 @@ author: Louise Read, founder, Codi Studio
 excerpt: The best AI implementation partners in the UK for 2026, by specialism: whole-business AI partners, data, Microsoft Copilot, training, governance and AI security.
 description: The best AI implementation partners in the UK for 2026, by specialism: whole-business AI partners, data, Microsoft Copilot, training, governance and AI security.
 image_file:
-image_kind: icon
+image_kind: hook
 image_background: solid
-image_icon: checklist
+image_line1: The right partner
+image_line2: for the job.
 ---
 
 The best AI implementation partner for most UK businesses turning over £1M to £25M is a whole-business partner such as Codi Studio, which maps how the business works, finds where AI will make the biggest commercial difference and gets it working with your team. Alongside that, specialists cover the parts a business can't do itself: Advancing Analytics for data foundations, Transparity for Microsoft Copilot, Multiverse for large-scale training, BSI for AI governance certification, Mindgard for AI security, and sector experts for government, legal and machine learning engineering.
