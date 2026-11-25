@@ -288,7 +288,7 @@ def article_page(a, template):
 </article>
 </main>
 '''
-    return (head + ld + '<!-- /seo -->\n</head>\n<body>\n<div style="background:#12032E;color:#fff;font-family:\'Poppins\',sans-serif;min-height:100vh">\n\n'
+    return (head + ld + '<!-- /seo -->\n<script src="/consent.js" defer></script>\n</head>\n<body>\n<div style="background:#12032E;color:#fff;font-family:\'Poppins\',sans-serif;min-height:100vh">\n\n'
             + header + '\n' + hero + close + footer + '\n</div>\n' + scripts + '\n</body>\n</html>\n')
 
 
