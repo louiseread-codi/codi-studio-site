@@ -134,13 +134,13 @@ Buying AI licences and running training was the first step. To see a return, the
 
 The right AI implementation consultant brings AI expertise and commercial acumen together: they map the whole business, connect your business context, build with your teams, put guardrails in place, hand over to internal owners and measure every build against commercial outcomes.
 
-codi studio is the AI partner that drives commercial value from AI. Our AI and technology implementation consultants bring business experience from working with large enterprises and start-ups, balancing AI expertise with commercial acumen. We map your business, connect your context, build AI automations and agents with your teams, and measure every build against growth or money saved. We build it with your teams, so it stays theirs. See the [AI Partner Programme](https://codistudio.ai/ai-partner-programme), or [book a call](https://calendly.com/louise-read-codi-marketing/30min).
+codi studio is the AI partner that drives commercial value from AI. Our AI and technology implementation consultants bring business experience from working with large enterprises and start-ups, balancing AI expertise with commercial acumen. We map your business, connect your context, build AI automations and agents with your teams, and measure every build against growth or money saved. We build it with your teams, so it stays theirs. See [the AI Assessment](https://codistudio.ai/ai-assessment), or [book a call](https://calendly.com/louise-read-codi-marketing/30min).
 
 ## Don’t just take it from us
 
 ***"Codi studio mapped out my whole business, identifying where AI would help and where it wouldn't, and gave me a roadmap with clear priorities. Then they turned my existing processes into AI automations and agents across finance, marketing and operations. I saw an immediate jump in traffic to my site, almost doubling in a week from one automation. Adding new products to my store used to take days and now takes a couple of hours. I started out with very little confidence in AI, and now I'm telling everyone about it."***
 
-Clementia Harrison, Founder, Beeaches Art
+Clementina Harrison, Founder, Beeaches Art
 
 ## FAQs
 
@@ -158,7 +158,7 @@ Training gets employees using AI. Implementation redesigns the business with AI,
 
 ### How much does an AI implementation consultant cost?
 
-It depends on the size of your business, how many departments you're redesigning, and whether the consultant builds it for you or with you. Large advisory firms are priced for large enterprises. [codi studio's programmes](https://codistudio.ai/ai-partner-programme) are priced for £1M to £25M businesses, and the value is quantified in the mapping stage, where every workflow is tied to growth or money saved.
+It depends on the size of your business, how many departments you're redesigning, and whether the consultant builds it for you or with you. Large advisory firms are priced for large enterprises. [codi studio's services](https://codistudio.ai/ai-assessment) are priced for £1M to £25M businesses, and the value is quantified in the mapping stage, where every workflow is tied to growth or money saved.
 
 ### How do I choose an AI implementation consultant?
 
