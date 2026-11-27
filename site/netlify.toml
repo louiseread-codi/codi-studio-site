@@ -29,3 +29,10 @@ force = true
 from = "/resources/:slug"
 to = "/resources/:slug.html"
 status = 200
+
+# AI Partner Programme retired 27 Nov 2026 (packages dropped): send it to the AI Assessment
+[[redirects]]
+from = "/ai-partner-programme"
+to = "/ai-assessment"
+status = 301
+force = true
